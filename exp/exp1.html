@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Experimentation</title>
+</head>
+<body>
+    <h1>Experiment 1</h1>
+    <h2>Right click on any part of the display, then click inspect. Once random stuff pops up, click the 'console' menu to check the JS experiment that I worked.</h2>
+    <p>Experiment: Write a program that uses console.log to print all the numbers from 1 to 100, with two exceptions. For numbers divisible by 3, print "Fizz" instead of the number, and for numbers divisible by 5 (and not 3), print "Buzz" instead.</p>
+    
+    <script>
+        /* I start the experiment by making a for loop that runs 100 times from 1, incrimenting by 1. Since I have to run 100 times from 1, I have to run i less than 101 to inclue 100th time. */
+        for (var i = 1; i < 101; i++){ 
+            
+            /* Exception 1: When i is divisible by 3, then print fizz instead of the number. To accomplish the task, I used % to determine whether the number does not leave any remainders when divided by 3.  */
+            if (i % 3 == 0){
+                console.log("Fizz");
+            } 
+            
+            /* Exception 2: When i is divisble by 5 but not by 3, print buzz instead of number. First, I used % like exception 1 to check if the number is divisible by 5. Then, I need to add another condition when i divided by 3 is not equal to zero. To do so, I used && bolean expression to only print buzz when both conditions are True.*/
+            else if (i % 5 == 0 && i % 3 != 0){
+                console.log("Buzz");
+            }
+
+            /*When a number is neither in exception 1 or exception 2, just print the number*/
+            else{
+                console.log(i);
+            }
+            
+        }
+    </script>
+
+</body>
+</html>
