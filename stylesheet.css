@@ -1,3 +1,7 @@
 body{
     background-color: lightblue;
 }
+
+.menu{
+    background: (51, 170, 51, .4);
+}
