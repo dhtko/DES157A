@@ -1,7 +1,47 @@
 body{
     background-color: lightblue;
+    
+    display: block;
+    justify-content: center;
 }
 
+header{
+    background-color: blue;
+
+    max-width: 1200px;
+    max-height: 250px;
+
+    display: block;
+    justify-content: center;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+
+    background-color: red;
+
+    max-width: 1200px;
+    max-height: 400px;
+}
 .menu{
-    background: (51, 170, 51, .4);
+    display: block;
+    
+    background-color: gainsboro;
+    border: solid black 5px;
+    
+    margin: 50px;
+
+    max-width: 300px;
+    max-height: 400px;
+}
+
+footer{
+    max-width: 1200px;
+    max-height: 100px;
+
+    background-color: green;
+}
+footer p{
+    text-align: center;
 }
