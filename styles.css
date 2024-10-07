@@ -20,6 +20,10 @@ a, address a{
 /*stylesheet*/
 header {
     background: rgb(6,88,168);
+    background: url(./images/cloud.png);
+    background-size: 120%;
+    background-position-x: -40px;
+
     max-width: 1200px;
 
     display: flex;
