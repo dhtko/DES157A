@@ -8,6 +8,8 @@ ul{
 }
 img{
     display: block;
+    margin: 0px;
+    padding: 0px;
 }
 a, address a{
     text-decoration: none;
@@ -31,7 +33,15 @@ header {
     height: 250px;
 
     background: rgb(6,88,168);
-    background: linear-gradient(180deg, rgba(6,88,168,1) 0%, rgba(193,231,245,1) 100%); 
+    background: linear-gradient(180deg, rgba(6,88,168,1) 0%, rgba(193,231,245,1) 100%);
+    
+    display: flex;
+    justify-content: center;
+}
+#banner img{
+    display: block;
+    width: 500px;
+    height: 200px;
 }
 
 #container{
