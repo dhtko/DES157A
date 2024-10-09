@@ -23,9 +23,11 @@ body{
 
 header {
     background: rgb(6,88,168);
-    background-size: 110%;
-    background-position-x: 25px;
-    background-position-y: -10px;
+    background: url("./images/cloud2.png");
+    background-size: 90%;
+    background-blend-mode: lighten;
+    background-position-x: 0px;
+    background-position-y: 2px;
 
     width: 1200px;
     height:300px;
@@ -41,9 +43,9 @@ header {
     width: 1200px;
     height: 250px;
 
-    background: rgb(6,88,168);
+    background: rgb(6,88,168);    
     background: linear-gradient(180deg, rgba(6,88,168,1) 0%, rgba(193,231,245,1) 100%);
-    
+
     display: flex;
     justify-content: center;
     gap: 50px;
@@ -92,7 +94,7 @@ header {
     transition: all 1s;
 }
 .menu li a{
-    transition: all 1s;
+    transition: all 0.5s;
 }
 .menu:hover{
     background: rgba(203,204,205,1);
@@ -110,7 +112,7 @@ footer{
     width: 1200px;
     height: 100px;
 
-    background: url(./images/footer.png);
+    background: url(./images/footer4.png);
     background-size:cover;
 
     display: flex;
@@ -118,18 +120,19 @@ footer{
     margin: 0 auto;
     justify-content: center;
     text-align: center;
+
+    /*box-shadow: 0px -3px 5px black;*/
 }
 
 
 /*fonts*/
 header h1, header h2{
-    margin: 20px 0px 0px 20px;
     color: rgb(255, 191, 73);
-
     font-family: 'Concert One';
 }
-h1{
-    font-size: 40px;
+header h1{
+    margin-top: 10px;
+    font-size: 35px;
 }
 header h2{
     font-size: 55px;
