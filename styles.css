@@ -16,20 +16,24 @@ a, address a{
     color: inherit;
 }
 
-
 /*stylesheet*/
+body{
+    background-color: skyblue;
+}
+
 header {
     background: rgb(6,88,168);
-    background: url(./images/cloud.png);
     background-size: 110%;
     background-position-x: 25px;
     background-position-y: -10px;
 
-    max-width: 1200px;
+    width: 1200px;
+    height:300px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     
     margin: 0 auto;
 }
@@ -42,13 +46,20 @@ header {
     
     display: flex;
     justify-content: center;
+    gap: 50px;
 }
 #banner img{
     display: block;
-    width: 225px;
-    height: 150px;
-    margin-top:25px;
+    width: 180px;
+    height: 105px;
+    margin-top:10px;
+
+    animation-name: happyMochi;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 3s;
 }
+
 
 #container{
     background: url(images/body.png);
@@ -57,25 +68,42 @@ header {
     background-position-y: -90px;
 
     width: 1200px;
-    height: 400px;
+    height: 350px;
 
     display: flex;
     justify-content: center;
     margin: 0 auto;
-
 }
 .menu{
     display: block;
     
-    background: rgba(203,204,205,0.9);
+    background: rgba(203,204,205,0.5);
     border: solid black 3px;
     border-radius: 20px;
     
-    padding: 15px;
+    padding: 5px;
     margin: auto;
 
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
+
+    text-align: center;
+
+    transition: all 1s;
+}
+.menu li a{
+    transition: all 1s;
+}
+.menu:hover{
+    background: rgba(203,204,205,1);
+    transform: scale(130%);
+    transition: all 1s;
+}
+.menu li a:hover{
+    color: orange;
+    font-size: 20px;
+    transition: 0.5s;
+    transition: all 0.5s;
 }
 
 footer{
@@ -89,7 +117,6 @@ footer{
     flex-direction: column;
     margin: 0 auto;
     justify-content: center;
-    
     text-align: center;
 }
 
@@ -102,20 +129,21 @@ header h1, header h2{
     font-family: 'Concert One';
 }
 h1{
-    font-size: 50px;
+    font-size: 40px;
 }
 header h2{
-    font-size: 30px;
+    font-size: 55px;
 }
 .menu h2{
     font-family: 'Nunito';
     font-size: 40px;
+    margin-top: 5px;
 }
-li a{
+.menu li a{
     line-height: 1.5em;
     
     font-family: 'Krub';
-    font-size: 20px;
+    font-size: 15px;
 }
 footer p, footer address{
     padding: 10px 0px 0px 0px;
@@ -125,3 +153,16 @@ footer p, footer address{
     font-size: 13px;
 }
 
+
+/*keyframes for automatic animation (under test)*/
+@keyframes happyMochi{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(35deg);
+    }
+    100%{
+        transform: rotate(-35deg);
+    }
+}
