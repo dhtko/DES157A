@@ -23,7 +23,7 @@ body{
 
 header {
     background: rgb(6,88,168);
-    background: url("./images/banner10.png");
+    background: url("./images/banner.png");
     background-size: 120%;
     background-position-y: 0px;
 
@@ -62,13 +62,12 @@ header {
 
 
 #container{
-    background: url(images/body.png);
-    background-size: 200%;
-    background-position-x: -250px;
-    background-position-y: -90px;
-
     width: 1200px;
     height: 350px;
+
+    background: url(images/body.png);
+    background-size: 264px;
+    background-position-x: 9px;
 
     display: flex;
     justify-content: center;
