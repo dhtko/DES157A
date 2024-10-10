@@ -68,6 +68,7 @@ header {
     background: url(images/body.png);
     background-size: 264px;
     background-position-x: 9px;
+    background-position-y: -1px;
 
     display: flex;
     justify-content: center;
