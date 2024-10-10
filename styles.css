@@ -23,11 +23,9 @@ body{
 
 header {
     background: rgb(6,88,168);
-    background: url("./images/cloud2.png");
-    background-size: 90%;
-    background-blend-mode: lighten;
-    background-position-x: 0px;
-    background-position-y: 2px;
+    background: url("./images/banner10.png");
+    background-size: 120%;
+    background-position-y: 0px;
 
     width: 1200px;
     height:300px;
@@ -113,10 +111,6 @@ footer{
     width: 1200px;
     height: 100px;
 
-    /*background: url(./images/footer12.png);
-    background-size:cover;
-    background-position-y: -5px;*/
-
     background: rgb(97, 157, 255);
     background: linear-gradient(180deg, rgba(97, 157, 255) 0%, rgba(19,15,40,1) 100%);
 
@@ -131,16 +125,17 @@ footer{
 
 
 /*fonts*/
-header h1, header h2{
-    color: rgb(255, 191, 73);
+header h1, header h2{    
     font-family: 'Concert One';
 }
 header h1{
     margin-top: 10px;
-    font-size: 35px;
+    color: rgb(250,186,22);
+    font-size: 45px;
 }
 header h2{
-    font-size: 55px;
+    color: rgb(244,237,76);
+    font-size: 50px;
 }
 .menu h2{
     font-family: 'Nunito';
