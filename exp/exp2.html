@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Experimentation</title>
+
+</head>
+<body>
+    <h1>Experiment 2</h1>
+    
+    <script>
+        /*
+        Prompt the user for a color that the computer is "thinking of" - either red, yellow, green, or blue. Then pick a random color from an array. If the color entered by the user matches the color picked by the program, it displays the output message "You are right!". Otherwise, it displays "Try again!". (Credit: Krithika Govind)
+        */
+        var rawInput = prompt("Guess the computer's choice of color!\nIt's either red, yellow, green, or blue","");
+        var input = rawInput.toLowerCase();
+
+        var color = ['red', 'yellow', 'green', 'blue'];
+
+        function randomNum(min, max){
+            var range = max - min + 1;
+            var random = Math.random();
+            var randomRange = Math.floor(random * range);
+            var result = min + randomRange;
+
+            return result;
+        }
+        var computerColor = color[randomNum(0,3)];
+        console.log(`computer's choice: ${computerColor}`);
+
+        if (input == computerColor){
+            console.log("You are right!");
+        }
+        else{
+            console.log("Try Again!");
+        }
+
+    </script>
+</body>
+</html>
