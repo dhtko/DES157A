@@ -18,10 +18,11 @@ a, address a{
 
 /*stylesheet*/
 body{
-    background-color: skyblue;
+    background-color: #ffefcd;
 }
 header{
-    background-color: red;
+    background: rgb(241,228,198);
+    background: linear-gradient(180deg, rgba(241,228,198,1) 0%, rgba(192,178,146,1) 100%);
     
     max-width: 1200px;
     height: 250px;
@@ -36,7 +37,7 @@ header img{
 
     margin-top: 20px;
     margin-left: 20px;
-    height: 220px;
+    height: 210px;
 }
 header h1{
     flex: 2;
@@ -52,26 +53,23 @@ main{
     justify-content: center;
     margin: 0 auto;
 
-    background-color: green;
+    background-color: #f4eddc;
 }
 article{
     display: block;
     
     width: 700px;
     padding: 20px;
-    margin: 10px auto; 
+    margin: 30px auto; 
 
-    border: 5px solid black;
     border-radius: 20px;
-    
-    background-color: yellow;
+
+    background-color: #fdf8ed;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 footer{
     max-width: 1200px;
     height: 100px;
-
-    background: rgb(97, 157, 255);
-    background: linear-gradient(180deg, rgba(97, 157, 255) 0%, rgba(19,15,40,1) 100%);
 
     display: flex;
     flex-direction: column;
@@ -79,9 +77,16 @@ footer{
     justify-content: center;
     text-align: center;
 
+    background: rgb(241,228,198);
+    background: linear-gradient(0deg, rgba(241,228,198,1) 0%, rgba(192,178,146,1) 100%);
     /*box-shadow: 0px -3px 5px black;*/
 }
 
+/*border*/
+header, main, footer{
+    border-left: 7px solid #8a784d;
+    border-right: 7px solid #8a784d;
+}
 
 /*fonts*/
 header h1{
@@ -98,5 +103,5 @@ article p, footer p, footer a, footer address{
     line-height: 1.5em;
 }
 footer p, footer a, footer address{
-    color: white;
+    color: black;
 }
