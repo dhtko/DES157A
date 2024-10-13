@@ -16,3 +16,87 @@ a, address a{
     color: inherit;
 }
 
+/*stylesheet*/
+body{
+    background-color: skyblue;
+}
+header{
+    background-color: red;
+    
+    max-width: 1200px;
+    height: 250px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+}
+header img{
+    flex: 1;
+
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 220px;
+}
+header h1{
+    flex: 2;
+    text-align: center;
+    margin: auto auto;
+}
+main{
+    max-width: 1200px;
+    min-height: 400px; /*fits 750px height restriction, but allowing vertical scroll as content continues to add on*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+
+    background-color: green;
+}
+article{
+    display: block;
+    
+    width: 700px;
+    padding: 20px;
+    margin: 10px auto; 
+
+    border: 5px solid black;
+    border-radius: 20px;
+    
+    background-color: yellow;
+}
+footer{
+    max-width: 1200px;
+    height: 100px;
+
+    background: rgb(97, 157, 255);
+    background: linear-gradient(180deg, rgba(97, 157, 255) 0%, rgba(19,15,40,1) 100%);
+
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+
+    /*box-shadow: 0px -3px 5px black;*/
+}
+
+
+/*fonts*/
+header h1{
+    font-size: 55px;
+}
+h2{
+    font-size: 45px;
+}
+h3{
+    font-size: 23px;
+}
+article p, footer p, footer a, footer address{
+    font-size: 15px;
+    line-height: 1.5em;
+}
+footer p, footer a, footer address{
+    color: white;
+}
