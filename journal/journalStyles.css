@@ -84,24 +84,38 @@ footer{
 
 /*border*/
 header, main, footer{
-    border-left: 7px solid #8a784d;
-    border-right: 7px solid #8a784d;
+    border-left: 3mm ridge #8a784d;
+    border-right: 3mm ridge #8a784d;
 }
 
 /*fonts*/
 header h1{
+    font-family: 'Abril FatFace';
     font-size: 55px;
 }
 h2{
+    font-family: 'Libre Baskerville';
+    font-weight: 700;
     font-size: 45px;
 }
+h2 time{
+    font-size: 16px;
+    text-align: right;
+}
 h3{
+    font-family: 'Cardo';
     font-size: 23px;
 }
 article p, footer p, footer a, footer address{
-    font-size: 15px;
+    font-family: 'Cormorant Infant';
+    font-size: 17px;
     line-height: 1.5em;
 }
+em{
+    color: rgb(209, 161, 58);
+}
+
 footer p, footer a, footer address{
+    font-size: 14px;
     color: black;
 }
