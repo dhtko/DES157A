@@ -1,38 +1,54 @@
 body{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+
+    background-color: orange;
+}
+#container{
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     gap: 20px;
 
     margin: 0 auto;
-    max-width:1200px;
-    max-height: 750px;
+    max-width: 1200px;
+    height: 750px;
 
-    background-color: red;
+    background-image: url(./images/madLibsBackground.png);
+    background-repeat: repeat-x;
+
+    border: 7px solid green;
 }
 header{
     flex: 1;
-
-    padding: 20px;
     gap: 100px;
-
+    
+    padding: 0px 20px;
+    
     max-width: 500px;
 }
 form{
-    flex: 2;
-
     display: flex;
     flex-direction: column;
-
-    margin: 5px;
-    padding: 10px;
+    
+    margin: 50px 50px;
+    padding: 20px;
     border: 5px solid black;
 
-    background-color: blue;
+    background-color: skyblue;
+    width: 300px;
+}
+.question{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 input{
-    margin-bottom: 15px;
+    margin-bottom: 1.2em;
 }
+
 
 /*overlay content*/
 .hidden{
@@ -72,3 +88,5 @@ input{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/*font*/

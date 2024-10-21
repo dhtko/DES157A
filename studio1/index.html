@@ -17,73 +17,96 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Case No. 157</h1>
-        <p>
-            Detective Codex is trying to rebuild a crime scene that a suspect murdered a married couple at their house. Your job, as an assistant of detective Codex, is to collect the information that the detective needs to rebuild the crime scene. The more and detailed the information is, the better for the detective.
-        </p>
-    </header>
+    <section id="container">
+        <header>
+            <h1>Case No. 157</h1>
+            <p>
+                Detective Codex is trying to rebuild a crime scene that a suspect murdered a married couple at their house. Your job, as an assistant of detective Codex, is to collect the information that the detective needs to rebuild the crime scene. The more and detailed the information is, the better for the detective.
+            </p>
+        </header>
 
-    <main>
+        <main>
+            <form>
+                <div class="question">
+                    <label for="q1">Living Noun: </label>
+                    <input type="text" id="q1" name="q1">
+                </div>
 
-        <form>
-            <label for="q1">Question 1</label>
-            <input type="text" id="q1" name="q1">
+                <div class="question">
+                    <label for="q2">Name: </label>
+                    <input type="text" id="q2" name="q2">
+                </div>
 
-            <label for="q1">Question 2</label>
-            <input type="text" id="q2" name="q2">
+                <div class="question">
+                    <label for="q3">Room Type: </label>
+                    <input type="text" id="q3" name="q3">
+                </div>
 
-            <label for="q1">Question 3</label>
-            <input type="text" id="q3" name="q3">
+                <div class="question">
+                    <label for="q4">Furniture: </label>
+                    <input type="text" id="q4" name="q4">
+                </div>
 
-            <label for="q1">Question 4</label>
-            <input type="text" id="q4" name="q4">
+                <div class="question">
+                    <label for="q5">Food: </label>
+                    <input type="text" id="q5" name="q5">
+                </div>
 
-            <label for="q1">Question 5</label>
-            <input type="text" id="q5" name="q5">
+                <div class="question">
+                    <label for="q6">Object: </label>
+                    <input type="text" id="q6" name="q6">
+                </div>
 
-            <label for="q1">Question 6</label>
-            <input type="text" id="q6" name="q6">
+                <div class="question">
+                    <label for="q7">Object: </label>
+                    <input type="text" id="q7" name="q7">
+                </div>
 
-            <label for="q1">Question 7</label>
-            <input type="text" id="q7" name="q7">
+                <div class="question">
+                    <label for="q8">Action: </label>
+                    <input type="text" id="q8" name="q8">
+                </div>
 
-            <label for="q1">Question 8</label>
-            <input type="text" id="q8" name="q8">
+                <div class="question">
+                    <label for="q9">Physical Ability: </label>
+                    <input type="text" id="q9" name="q9">
+                </div>
 
-            <label for="q1">Question 9</label>
-            <input type="text" id="q9" name="q9">
+                <div class="question">
+                    <label for="q10">Room Type:</label>
+                    <input type="text" id="q10" name="q10">
+                </div>
 
-            <label for="q1">Question 10</label>
-            <input type="text" id="q10" name="q10">
+                <div class="question">
+                    <label for="q11">Number:</label>
+                    <input type="text" id="q11" name="q11">
+                </div>
 
-            <label for="q1">Question 11</label>
-            <input type="text" id="q11" name="q11">
+                <input type="submit" name="send" value="Rebuild the Crime Scene">
+            </form>
 
-            <input type="submit" name="send" value="Rebuild the Crime Scene">
-        </form>
-
-        <section id="overlay" class="showing">
-            <article>
-                <h2>Crime Scene: Case No. 157</h2>
-                <p>
-                    I'm (octopus)..... I'm (octopus)..... <br>
-                    <br>Today, I am gonna kill Mr. and Mrs. (Thomas).<br>
-                    <br>Knock. Knock.<br>
-                    <br>Oh, what a lovely couple. The couple welcomed me to their (bathroom).<br>
-                    <br>Mr. (Thomas) on his (bed) and I sat on the guest (bed).<br>
-                    <br>Wait, I do not see Mrs. (Thomas). Right, she is preparing (pie). Of course, she will not gonna finish her prep as she will end up dead.<br>
-                    <br>It's time to move.<br>
-                    <br>I pulled a/an (lemon) from my (tree), and (jump) it to Mr. (thomas).<br>
-                    <br>Oh, I missed it. I did it again with caution this time... Come on! I missed it again?<br>
-                    <br>Mr. (thomas) called her wife. However, she did not respond to her husband's scream since her (flight) has gone low. Mr. Thomas ran away until he reached (kitchen),<br>
-                    <br>Ha, I got you! Now, die!<br>
-                    <br>No. I was not able to finish him. I am currently (7) meters away from the actual crime scene. Why? What holds me back from killing him?<br>
-                    <br>What a mystery.....
-                    </p>
-                <button class="close">Close</button>
-            </article>
-        </section>
-    </main>
+            <section id="overlay" class="hidden">
+                <article>
+                    <h2>Crime Scene: Case No. 157</h2>
+                    <p>
+                        I'm (octopus)..... I'm (octopus)..... <br>
+                        <br>Today, I am gonna kill Mr. and Mrs. (Thomas).<br>
+                        <br>Knock. Knock.<br>
+                        <br>Oh, what a lovely couple. The couple welcomed me to their (bathroom).<br>
+                        <br>Mr. (Thomas) on his (bed) and I sat on the guest (bed).<br>
+                        <br>Wait, I do not see Mrs. (Thomas). Right, she is preparing (pie). Of course, she will not gonna finish her prep as she will end up dead.<br>
+                        <br>It's time to move.<br>
+                        <br>I pulled a/an (lemon) from my (tree), and (jump) it to Mr. (thomas).<br>
+                        <br>Oh, I missed it. I did it again with caution this time... Come on! I missed it again?<br>
+                        <br>Mr. (thomas) called her wife. However, she did not respond to her husband's scream since her (flight) has gone low. Mr. Thomas ran away until he reached (kitchen),<br>
+                        <br>Ha, I got you! Now, die!<br>
+                        <br>No. I was not able to finish him. I am currently (7) meters away from the actual crime scene. Why? What holds me back from killing him?<br>
+                        <br>What a mystery.....
+                        </p>
+                    <button class="close">Close</button>
+                </article>
+            </section>
+        </main>
+    </section>
 </body>
 </html>
