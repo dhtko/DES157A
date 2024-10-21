@@ -17,7 +17,7 @@ body{
     height: 750px;
 
     background-image: url(./images/madLibsBackground.png);
-    background-repeat: repeat-x;
+    background-size: cover;
 
     border: 7px solid green;
 
@@ -27,7 +27,7 @@ header{
     flex: 1;
     gap: 100px;
     
-    padding: 0px 20px;
+    padding: 0px 50px;
     
     max-width: 500px;
 }
@@ -35,7 +35,7 @@ form{
     display: flex;
     flex-direction: column;
     
-    margin: 50px 50px;
+    margin: 50px;
     padding: 20px;
     border: 5px solid black;
     
@@ -53,7 +53,7 @@ form{
     margin-bottom: 10px;
 }
 #glass{
-    height: 65%;
+    height: 60%;
 
     position: absolute;
     bottom: 4%;
@@ -104,14 +104,20 @@ form{
 h1{
     font-family: 'Cinzel Decorative';
     font-size: 50px;
+    
+    margin: 0px;
+    padding: 50px 0px 0px 0px;
 }
 header p{
     font-family: 'Halant';
-    font-size: 18px;
+    font-size: 20px;
+
+    margin: 0px;
+    padding: 20px 0px 0px 0px;
 }
 form h2{
-    margin: 10px 0px;
-    padding: 5px 0px;
+    margin: 0px 0px;
+    padding: 0px 0px 20px 0px;
 
     font-family: 'Besley';
     font-size: 40px;
