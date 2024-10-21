@@ -19,7 +19,7 @@ body{
     background-image: url(./images/madLibsBackground.png);
     background-size: cover;
 
-    border: 7px solid green;
+    border: 1px solid green;
 
     position: relative;
 }
@@ -35,15 +35,20 @@ form{
     display: flex;
     flex-direction: column;
     
-    margin: 50px;
-    padding: 20px;
-    border: 5px solid black;
+    position: absolute;
+    top: 8%;
+    right: 5%;
+    padding: 15px 20px 20px 20px;
     
-    width: 300px;
+    border: 6px solid rgb(138, 76, 54);
+    border-radius: 20px;
+
+    width: 320px;
 
     background-image: url(./images/notepad.jpg);
     background-size: 90%;
     
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 .question{
     display: flex;
@@ -53,7 +58,7 @@ form{
     margin-bottom: 10px;
 }
 #glass{
-    height: 60%;
+    height: 55%;
 
     position: absolute;
     bottom: 4%;
@@ -88,14 +93,26 @@ form{
 #overlay article{
     box-sizing: border-box;
 
-    background-color: burlywood;
+    background-image: url('./images/blood_notepad.jpg');
+    background-size: cover;
+    background-position-x: -25px;
 
     padding: 20px;
-    width: 50vw;
-    height: 80vh;
+    width: 80vw;
+    height: 88vh;
+
+    border: 5px solid #5E232C;
 
     position: absolute;
     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#close{
+    margin: 0px;
+
+    position: absolute;
+    bottom: 1%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -103,14 +120,17 @@ form{
 /*font*/
 h1{
     font-family: 'Cinzel Decorative';
-    font-size: 50px;
+    font-size: 70px;
+    color: white;
     
     margin: 0px;
     padding: 50px 0px 0px 0px;
 }
 header p{
     font-family: 'Halant';
-    font-size: 20px;
+    font-size: 19px;
+    line-height: 1.5em;
+    color: white;
 
     margin: 0px;
     padding: 20px 0px 0px 0px;
@@ -126,11 +146,20 @@ form label{
     font-family: 'Nixie One';
     font-size: 16px;
 }
-.overlay h2{
+article h2{
     font-family: 'Anonymous Pro';
-    font-size: 30px;
+    font-size: 40px;
+    text-align: center;
+    color: #7E1A29;
+
+    margin: 0px;
+    padding: 5px 0px;
 }
-.overlay p{
+article p{
     font-family: 'PT Mono';
-    font-size: 16px;
+    font-size: 15px;
+    color: #D9D9D9;
+
+    line-height: 1.2em;
+    padding: 0px 10px;
 }
