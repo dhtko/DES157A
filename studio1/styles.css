@@ -20,6 +20,8 @@ body{
     background-repeat: repeat-x;
 
     border: 7px solid green;
+
+    position: relative;
 }
 header{
     flex: 1;
@@ -36,17 +38,26 @@ form{
     margin: 50px 50px;
     padding: 20px;
     border: 5px solid black;
-
-    background-color: skyblue;
+    
     width: 300px;
+
+    background-image: url(./images/notepad.jpg);
+    background-size: 90%;
+    
 }
 .question{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    margin-bottom: 10px;
 }
-input{
-    margin-bottom: 1.2em;
+#glass{
+    height: 60%;
+
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
 }
 
 
