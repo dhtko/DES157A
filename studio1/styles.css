@@ -4,7 +4,7 @@ body{
     justify-content: center;
     margin: 0 auto;
 
-    background-color: orange;
+    background-color: #002437;
 }
 #container{
     display: flex;
@@ -19,7 +19,8 @@ body{
     background-image: url(./images/madLibsBackground.png);
     background-size: cover;
 
-    border: 1px solid green;
+    border: 5px solid #FFD500;
+    border-radius: 10px;
 
     position: relative;
 }
@@ -55,7 +56,12 @@ form{
     flex-direction: row;
     justify-content: space-between;
 
-    margin-bottom: 10px;
+    margin-bottom: 13px;
+}
+input[type="text"]:focus{
+    outline: 0;
+    border: 3px solid #AD4857; 
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 #glass{
     height: 55%;
@@ -117,6 +123,30 @@ form{
     transform: translate(-50%, -50%);
 }
 
+
+#close, #send{
+    border-radius: 8px;
+    padding: 8px;
+
+    background-color: #AF2626;
+    color: white;
+
+    transition: all 1s;
+}
+#send:hover, #close:hover{
+    color: #E01313;
+    background-color: white;
+
+    font-family: 'Cinzel Decorative';
+    font-size: 18px;
+
+    transition: all 1s;
+}
+#close:hover{
+    background-color: black;
+}
+
+
 /*font*/
 h1{
     font-family: 'Cinzel Decorative';
@@ -142,7 +172,7 @@ form h2{
     font-family: 'Besley';
     font-size: 40px;
 }
-form label{
+form label, #close, #send{
     font-family: 'Nixie One';
     font-size: 16px;
 }
@@ -162,4 +192,7 @@ article p{
 
     line-height: 1.2em;
     padding: 0px 10px;
+}
+em{
+    color: #B60F0F;
 }
