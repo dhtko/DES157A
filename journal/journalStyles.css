@@ -105,6 +105,7 @@ h2 time{
 h3{
     font-family: 'Cardo';
     font-size: 23px;
+    line-height: 1.5em;
 }
 article p, footer p, footer a, footer address{
     font-family: 'Cormorant Infant';
