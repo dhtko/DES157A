@@ -10,8 +10,7 @@
 
     notepad.addEventListener('submit', function(event){
         event.preventDefault();
-        document.querySelector('#overlay').className = 'showing';
-
+        
         const q1 = document.querySelector('#q1').value;
         const q2 = document.querySelector('#q2').value;
         const q3 = document.querySelector('#q3').value;
@@ -69,6 +68,8 @@
             document.querySelector('#q11').focus();
         }
         else{
+            document.querySelector('#overlay').className = 'showing';
+
             rebuildScene = `<p>I'm <em>${q1}</em>..... I'm <em>${q1}</em>..... <br>
             <br>Today, I am gonna kill Mr. and Mrs. <em>${q2}</em>.<br>
             <br>Knock. Knock.<br>
