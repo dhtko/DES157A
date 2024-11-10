@@ -26,7 +26,6 @@
         }
 
         toggle(counter);
-
     });
 
     function toggle(object){
