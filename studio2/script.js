@@ -5,6 +5,10 @@
     const nextBtn = document.querySelector('#nextBtn');
     const prevBtn = document.querySelector('#previousBtn');
     const tab = document.querySelector('#tab');
+
+    const opening = document.querySelector('#opening');
+    const closing = document.querySelector('#closing');
+
     let counter = 0;
 
     nextBtn.addEventListener('click', function(){
@@ -13,27 +17,42 @@
             counter = 5;
         }
 
-        tabLabel(counter);
-        
+        toggle(counter);
     });
     prevBtn.addEventListener('click', function(){
         counter--;
         if (counter < 0){
             counter = 0;
         }
-        
-        tabLabel(counter);
+
+        toggle(counter);
 
     });
 
-    function tabLabel(object){
+    function toggle(object){
         switch(object){
-            case 1: tab.innerHTML = '1'; break;
-            case 2: tab.innerHTML = '2'; break;
-            case 3: tab.innerHTML = '3'; break;
-            case 4: tab.innerHTML = '4'; break;
-            case 5: tab.innerHTML = 'end'; break;
-            default: tab.innerHTML = 'Opening'; break;
+            case 1: 
+                tab.innerHTML = '1'; 
+                break;
+            case 2: 
+                tab.innerHTML = '2'; 
+                break;
+            case 3: 
+                tab.innerHTML = '3'; 
+                break;
+            case 4: 
+                tab.innerHTML = '4'; 
+                break;
+            case 5: 
+                tab.innerHTML = 'Ending'; 
+                opening.className = 'content hidden'
+                closing.className = 'content showing';
+                break;
+            default: 
+                tab.innerHTML = 'Opening';
+                opening.className = 'content showing';
+                closing.className = 'content hidden';
+                break;
         }
     }
 })();
