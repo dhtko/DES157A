@@ -15,7 +15,7 @@
         tabLabel(counter);
             
     });
-    prevBtn.addEventListener('click', function(event){
+    prevBtn.addEventListener('click', function(){
         counter--;
         if (counter < 0){
             counter = 0;

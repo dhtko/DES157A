@@ -1,3 +1,11 @@
+/*reset*/
+img{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+
 #container{
     display: flex;
     flex-direction: column;
@@ -5,8 +13,8 @@
     margin: 0 auto;
 
     border: 5px solid black;
-    width: 1200px;
-    height: 750px;
+    max-width: 1200px;
+    max-height: 750px;
 
     position: relative;
 }
@@ -22,22 +30,32 @@ header{
     border-right: 2px solid black;
     
     position: absolute;
-    top: 15.5%;
+    top: 8.9%;
     right: 12%;
 }
-#theBook{
+#screen{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-#book{
+#display{
     width: 1100px;
-    height: 550px;
-    background-color: red;
+    height: 620px;
+    background-color: orange;
     
-    border: 5px solid black;
-    border-radius: 25px;
+    border-style: inset;
+    border: 12px solid brown;
+
+    position: relative;
+}
+.content{
+    background-color: red;
+
+    width: 988px;
+    height: 620px;
+
+    position: absolute;
 }
 #previousBtn{
     margin: 0px 15px;
@@ -61,12 +79,25 @@ header{
 }
 
 
+/*overlay*/
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+}
+.showing{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*font*/
 header h1{
     margin: 0px;
     padding: 0px 0px 20px 0px;
     font-size: 70px;
 }
 #tab{
-    font-size: 25px;
+    font-size: 20px;
+    padding: 5px 0px;
 }
 
