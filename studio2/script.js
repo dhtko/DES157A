@@ -12,14 +12,16 @@
         if (counter > 5){
             counter = 5;
         }
+
         tabLabel(counter);
-            
+        
     });
     prevBtn.addEventListener('click', function(){
         counter--;
         if (counter < 0){
             counter = 0;
         }
+        
         tabLabel(counter);
 
     });

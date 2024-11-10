@@ -90,6 +90,14 @@ header{
 }
 
 
+/*image setting*/
+#closing img, #opening img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
 /*font*/
 header h1{
     margin: 0px;
@@ -99,5 +107,8 @@ header h1{
 #tab{
     font-size: 20px;
     padding: 5px 0px;
+}
+#closing, #opening{
+    text-align: center;
 }
 
