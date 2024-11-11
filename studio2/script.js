@@ -40,7 +40,7 @@
                 tab.innerHTML = '3'; 
                 break;
             case 4: 
-                tab.innerHTML = '4'; 
+                tab.innerHTML = 'Sergant'; 
                 break;
             case 5: 
                 tab.innerHTML = 'Ending'; 

@@ -15,8 +15,6 @@ img{
     border: 5px solid black;
     max-width: 1200px;
     max-height: 750px;
-
-    position: relative;
 }
 header{
     text-align: center;
@@ -30,8 +28,8 @@ header{
     border-right: 2px solid black;
     
     position: absolute;
-    top: 8.9%;
-    right: 12%;
+    top: 9%;
+    right: 26%;
 }
 #screen{
     display: flex;
@@ -42,8 +40,7 @@ header{
 #display{
     width: 1100px;
     height: 620px;
-    background-color: orange;
-    
+
     border-style: inset;
     border: 12px solid brown;
 
@@ -79,7 +76,7 @@ header{
 }
 
 
-/*overlay*/
+/*toggle*/
 .hidden{
     visibility: hidden;
     opacity: 0;
@@ -97,6 +94,56 @@ header{
     width: 50%;
 }
 
+
+/*content*/
+#sergant{
+    background-image: url('./images/sgt_background.jpg');
+    background-size: cover;
+}
+.snapshot{
+    background: rgba(0,0,0,0.5);
+    border: 5px solid white;
+}
+#sgt_one{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+
+    width: 170px;
+    height: 210px;
+}
+#sgt_two{
+    position: absolute;
+    bottom: 30%;
+    right: 0%;
+
+    width: 200px;
+    height: 210px;
+}
+#sgt_three{
+    position: absolute;
+    top: 0%;
+    right: 10%;
+
+    width: 200px;
+    height: 210px;
+}
+#sgt_four{
+    position: absolute;
+    top: 0%;
+    left: 21%;
+
+    width: 290px;
+    height: 280px;
+}
+#sgt_five{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+
+    width: 310px;
+    height: 320px;
+}
 
 /*font*/
 header h1{
