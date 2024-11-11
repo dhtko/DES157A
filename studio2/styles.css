@@ -28,7 +28,7 @@ header{
     border-right: 2px solid black;
     
     position: absolute;
-    top: 9%;
+    top: 7%;
     right: 26%;
 }
 #screen{
@@ -95,7 +95,7 @@ header{
 }
 
 
-/*content*/
+/*content 4: sergant*/
 #sergant{
     background-image: url('./images/sgt_background.jpg');
     background-size: cover;
@@ -103,6 +103,17 @@ header{
 .snapshot{
     background: rgba(0,0,0,0.5);
     border: 5px solid white;
+}
+#outer_sgt_one{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+
+    width: 170px;
+    height: 210px;
+
+    background-color: transparent;
+    border: 5px solid green;
 }
 #sgt_one{
     position: absolute;
@@ -112,29 +123,76 @@ header{
     width: 170px;
     height: 210px;
 }
-#sgt_two{
+#outer_sgt_two{
     position: absolute;
     bottom: 30%;
     right: 0%;
 
     width: 200px;
     height: 210px;
+
+    background-color: transparent;
+    border: 5px solid green;
 }
-#sgt_three{
+#sgt_two{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+
+    width: 200px;
+    height: 210px;
+}
+
+#outer_sgt_three{
     position: absolute;
     top: 0%;
     right: 10%;
 
     width: 200px;
     height: 210px;
+
+    background-color: transparent;
+    border: 5px solid green;
 }
-#sgt_four{
+#sgt_three{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+
+    width: 200px;
+    height: 210px;
+}
+
+#outer_sgt_four{
     position: absolute;
     top: 0%;
     left: 21%;
 
     width: 290px;
     height: 280px;
+
+    background-color: transparent;
+    border: 5px solid green;
+}
+#sgt_four{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+
+    width: 290px;
+    height: 280px;
+}
+
+#outer_sgt_five{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+
+    width: 310px;
+    height: 320px;
+
+    background-color: transparent;
+    border: 5px solid green;
 }
 #sgt_five{
     position: absolute;
