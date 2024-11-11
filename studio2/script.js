@@ -9,11 +9,11 @@ window.addEventListener('load', function(){
     const opening = document.querySelector('#opening');
 
     const privatE = document.querySelector('#private');
+    const slideNext = document.querySelector('#slideNext');
+    const slidePrevious = document.querySelector('#slidePrevious');
     const slideImages = ['slideshow_1.jpg', 'slideshow_2.jpg', 'slideshow_3.jpg', 'slideshow_4.jpg', 'slideshow_5.jpg'];
     const slide = document.querySelector('#privateImage');
-    const slideNext = document.querySelector('#slide_next');
-    const slidePrevious = document.querySelector('#slide_previous');
-    
+
     const sergant = document.querySelector('#sergant');
     const outer_sgt_one = document.querySelector('#outer_sgt_one');
     const outer_sgt_two = document.querySelector('#outer_sgt_two');
@@ -45,6 +45,7 @@ window.addEventListener('load', function(){
         toggle(counter); //label and on/off
 
         switch(counter){ //action
+            case 2: content_two(); break;
             case 4: content_four(); break;
         }
     });
@@ -102,22 +103,24 @@ window.addEventListener('load', function(){
     }
 
     function content_two(){
-        let slideCounter = 0;
-        const slideImages = ['slideshow_1.jpg', 'slideshow_2.jpg', 'slideshow_3.jpg', 'slideshow_4.jpg', 'slideshow_5.jpg'];
-        const slide = document.querySelector('#privateImage');
+        let slideChecker = 0;
 
         slideNext.addEventListener('click', function(){
-            slideCounter++;
-            console.log(slideCounter);
-            //slide.src = `images/${slideImages[slideCounter]}`;
+            slideChecker++;
+            if (slideChecker > slideImages.length - 1){
+                slideChecker = 0;
+            }
+
+            slide.src = `images/${slideImages[slideChecker]}`;
         });
 
         slidePrevious.addEventListener('click', function(){
-            slideCounter--;
-            console.log(slideCounter);
-            //slide.src = `images/${slideImages[slideCounter]}`;
+            slideChecker--;
+            if (slideChecker < 0){
+                slideChecker = slideImages.length-1;
+            }
+            slide.src = `images/${slideImages[slideChecker]}`;
         });
-
     }
 
     function content_four(){
