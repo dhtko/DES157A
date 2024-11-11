@@ -1,4 +1,4 @@
-(function(){
+window.addEventListener('load', function(){
     'use strict';
     console.log('reading js');
 
@@ -10,7 +10,7 @@
 
     const privatE = document.querySelector('#private');
     const slideImages = ['slideshow_1.jpg', 'slideshow_2.jpg', 'slideshow_3.jpg', 'slideshow_4.jpg', 'slideshow_5.jpg'];
-    const slide = document.querySelector('privateImage');
+    const slide = document.querySelector('#privateImage');
     const slideNext = document.querySelector('#slide_next');
     const slidePrevious = document.querySelector('#slide_previous');
     
@@ -103,10 +103,19 @@
 
     function content_two(){
         let slideCounter = 0;
+        const slideImages = ['slideshow_1.jpg', 'slideshow_2.jpg', 'slideshow_3.jpg', 'slideshow_4.jpg', 'slideshow_5.jpg'];
+        const slide = document.querySelector('#privateImage');
 
         slideNext.addEventListener('click', function(){
             slideCounter++;
             console.log(slideCounter);
+            //slide.src = `images/${slideImages[slideCounter]}`;
+        });
+
+        slidePrevious.addEventListener('click', function(){
+            slideCounter--;
+            console.log(slideCounter);
+            //slide.src = `images/${slideImages[slideCounter]}`;
         });
 
     }
@@ -166,4 +175,4 @@
     }
 
 
-})();
+});
