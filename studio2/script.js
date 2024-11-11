@@ -7,6 +7,12 @@
     const tab = document.querySelector('#tab');
 
     const opening = document.querySelector('#opening');
+
+    const privatE = document.querySelector('#private');
+    const slideImages = ['slideshow_1.jpg', 'slideshow_2.jpg', 'slideshow_3.jpg', 'slideshow_4.jpg', 'slideshow_5.jpg'];
+    const slide = document.querySelector('privateImage');
+    const slideNext = document.querySelector('#slide_next');
+    const slidePrevious = document.querySelector('#slide_previous');
     
     const sergant = document.querySelector('#sergant');
     const outer_sgt_one = document.querySelector('#outer_sgt_one');
@@ -38,7 +44,7 @@
 
         toggle(counter); //label and on/off
 
-        switch(counter){
+        switch(counter){ //action
             case 4: content_four(); break;
         }
     });
@@ -49,6 +55,11 @@
         }
 
         toggle(counter); //label and on/off
+
+        switch(counter){ //action
+            case 2: content_two(); break;
+            case 4: content_four(); break;
+        }
     });
 
     function toggle(object){
@@ -57,7 +68,11 @@
                 tab.innerHTML = '1'; 
                 break;
             case 2: 
-                tab.innerHTML = '2'; 
+                tab.innerHTML = 'Private';
+                opening.className = 'content hidden';
+                privatE.className = 'content showing';
+                sergant.className = 'content hidden';
+                closing.className = 'content hidden';
                 break;
             case 3: 
                 tab.innerHTML = '3'; 
@@ -65,22 +80,35 @@
             case 4: 
                 tab.innerHTML = 'Sergant';
                 opening.className = 'content hidden';
+                privatE.className = 'content hidden';
                 sergant.className = 'content showing';
                 closing.className = 'content hidden';
                 break;
             case 5: 
                 tab.innerHTML = 'Ending'; 
                 opening.className = 'content hidden';
+                privatE.className = 'content hidden';
                 sergant.className = 'content hidden';
                 closing.className = 'content showing';
                 break;
             default: 
                 tab.innerHTML = 'Opening';
                 opening.className = 'content showing';
+                privatE.className = 'content hidden';
                 sergant.className = 'content hidden';
                 closing.className = 'content hidden';
                 break;
         }
+    }
+
+    function content_two(){
+        let slideCounter = 0;
+
+        slideNext.addEventListener('click', function(){
+            slideCounter++;
+            console.log(slideCounter);
+        });
+
     }
 
     function content_four(){

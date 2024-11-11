@@ -5,7 +5,7 @@ img{
     padding: 0px;
 }
 
-
+/*frames*/
 #container{
     display: flex;
     flex-direction: column;
@@ -93,8 +93,42 @@ header{
     margin-right: auto;
     width: 50%;
 }
+#slideshow img{
+    border: 10px solid gray;
+    border-style: inset;
+    width: 500px;
+}
 .profile img{
     width: 400px;
+}
+
+
+/*content 2: private*/
+#private{
+    background-color: orange;
+}
+#second_content{
+    display: flex;
+    flex-direction: row;
+}
+#slide_links{
+    display: flex;
+    width: 520px;
+    margin: auto;
+}
+#slideshow button{
+    text-decoration: none;
+    
+    display: block;
+    flex: 1;
+
+    background: red;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+#slideshow button:hover{
+    background: blue;
 }
 
 
@@ -214,4 +248,6 @@ header h1{
 #closing, #opening{
     text-align: center;
 }
-
+#slideshow button{
+    color: white;
+}
