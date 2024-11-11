@@ -93,6 +93,14 @@ header{
     margin-right: auto;
     width: 50%;
 }
+.private_photo img{
+    width: 350px;
+    transition: all 1s ease;
+}
+.private_photo img:hover{
+    transform: scale(2);
+    box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.75);
+}
 #slideshow img{
     border: 10px solid gray;
     border-style: inset;
@@ -103,8 +111,21 @@ header{
 }
 
 
-/*content 2: private*/
+/*content 1: private*/
 #private{
+    background-color: green;
+
+    display: flex;
+    flex-direction: row;
+
+}
+.private_photo{
+    flex: 1;
+}
+
+
+/*content 2: private 1st class*/
+#private1stClass{
     background-color: orange;
 }
 #second_content{
@@ -131,6 +152,11 @@ header{
     background: blue;
 }
 
+
+/*content 3: corporal*/
+#corporal{
+    background-color: pink;
+}
 
 /*content 4: sergant*/
 #sergant{

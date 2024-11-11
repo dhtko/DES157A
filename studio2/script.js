@@ -1,4 +1,4 @@
-window.addEventListener('load', function(){
+(function(){
     'use strict';
     console.log('reading js');
 
@@ -8,11 +8,15 @@ window.addEventListener('load', function(){
 
     const opening = document.querySelector('#opening');
 
-    const privatE = document.querySelector('#private');
+    const lowestRank = document.querySelector('#private');
+
+    const privatE = document.querySelector('#private1stClass');
     const slideNext = document.querySelector('#slideNext');
     const slidePrevious = document.querySelector('#slidePrevious');
     const slideImages = ['slideshow_1.jpg', 'slideshow_2.jpg', 'slideshow_3.jpg', 'slideshow_4.jpg', 'slideshow_5.jpg'];
     const slide = document.querySelector('#privateImage');
+
+    const corporal = document.querySelector('#corporal');
 
     const sergant = document.querySelector('#sergant');
     const outer_sgt_one = document.querySelector('#outer_sgt_one');
@@ -66,36 +70,56 @@ window.addEventListener('load', function(){
     function toggle(object){
         switch(object){
             case 1: 
-                tab.innerHTML = '1'; 
-                break;
-            case 2: 
                 tab.innerHTML = 'Private';
                 opening.className = 'content hidden';
+                lowestRank.className = 'content showing';
+                privatE.className = 'content hidden';
+                corporal.className = 'content hidden';
+                sergant.className = 'content hidden';
+                closing.className = 'content hidden';
+                break;
+            case 2: 
+                tab.innerHTML = 'Private 1st Class';
+                opening.className = 'content hidden';
+                lowestRank.className = 'content hidden';
                 privatE.className = 'content showing';
+                corporal.className = 'content hidden';
                 sergant.className = 'content hidden';
                 closing.className = 'content hidden';
                 break;
             case 3: 
-                tab.innerHTML = '3'; 
+                tab.innerHTML = 'Corporal';
+                opening.className = 'content hidden';
+                lowestRank.className = 'content hidden';
+                privatE.className = 'content hidden';
+                corporal.className = 'content showing';
+                sergant.className = 'content hidden';
+                closing.className = 'content hidden';
                 break;
             case 4: 
                 tab.innerHTML = 'Sergant';
                 opening.className = 'content hidden';
+                lowestRank.className = 'content hidden';
                 privatE.className = 'content hidden';
+                corporal.className = 'content hidden';
                 sergant.className = 'content showing';
                 closing.className = 'content hidden';
                 break;
             case 5: 
                 tab.innerHTML = 'Ending'; 
                 opening.className = 'content hidden';
+                lowestRank.className = 'content hidden';
                 privatE.className = 'content hidden';
+                corporal.className = 'content hidden';
                 sergant.className = 'content hidden';
                 closing.className = 'content showing';
                 break;
             default: 
                 tab.innerHTML = 'Opening';
                 opening.className = 'content showing';
+                lowestRank.className = 'content hidden';
                 privatE.className = 'content hidden';
+                corporal.className = 'content hidden';
                 sergant.className = 'content hidden';
                 closing.className = 'content hidden';
                 break;
@@ -178,4 +202,4 @@ window.addEventListener('load', function(){
     }
 
 
-});
+})();
