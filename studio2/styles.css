@@ -95,7 +95,15 @@ header{
 #closing img, #opening img{
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+
+    border: 15px solid black;
+    border-style: double;
+}
+#opening img{
+    width: 780px;
+}
+#closing img{
+    width: 400px;
 }
 .private_photo img{
     width: 440px;
@@ -292,11 +300,11 @@ header{
     border-style: none;
     background-color: rgb(49, 49, 49);
 
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 .overlay button:hover{
     transform: scale(1.5);
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     opacity: 0.75;
 }
 
@@ -345,6 +353,7 @@ header h1{
 
     font-family: "Ysabeau Office";
     font-size: 20px;
+    line-height: 1.3em;
 }
 
 .overlay h2{
@@ -366,6 +375,12 @@ header h1{
 
 .overlay button, #slideshow button{
     font-family: "Roboto";
-    font-size: 20px;
+    font-size: 18px;
     color: white;
+}
+
+figcaption{
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 1.5em;
 }
