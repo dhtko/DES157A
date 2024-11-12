@@ -118,6 +118,9 @@ header{
     border: 10px solid rgb(0, 0, 0);
     border-style: double;
 }
+#closing img{
+    width: 400px;
+}
 
 
 /*content 1: private*/
@@ -302,22 +305,37 @@ header{
 header h1{
     margin: 0px;
     padding: 0px 0px 30px 0px;
+    
+    font-family: "Hammersmith One";
     font-size: 60px;
 }
 #tab{
-    font-size: 20px;
     padding: 5px 0px;
+    
+    font-family: "Palanquin Dark";
+    font-size: 20px;
 }
 #closing, #opening{
     text-align: center;
+}
+#opening h2, #closing h2{
+    font-family: "Alata";
+    font-size: 40px;
+}
+#opening h3, #closing h3{
+    font-family: "Kumbh Sans";
+    font-size: 25px;
 }
 
 .private_photo h2{
     margin: 0px;
     padding: 15px 0px;
+
+    font-family: 'Shanti';
     font-size: 35px;
 }
 .private_photo p{
+    font-family: "Ysabeau Office";
     font-size: 16px;
 }
 
@@ -325,28 +343,29 @@ header h1{
     margin: 0px;
     padding: 0px;
 
-    font-size: 20px;
-}
-#slideshow button{
-    color: white;
+    font-family: "Ysabeau Office";
     font-size: 20px;
 }
 
 .overlay h2{
     text-align: center;
-    font-size: 45px;
 
     margin: 0px;
     padding: 20px 0px;
-
+    
+    font-family: 'Shanti';
+    font-size: 45px;
 }
 .profile p{
     padding: 0px;
     margin: 0px;
     
+    font-family: "Ysabeau Office";
     font-size: 20px;
 }
-.overlay button{
+
+.overlay button, #slideshow button{
+    font-family: "Roboto";
     font-size: 20px;
     color: white;
 }
