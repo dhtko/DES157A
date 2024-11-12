@@ -67,6 +67,7 @@
         }
     });
 
+    //label + switching contents
     function toggle(object){
         switch(object){
             case 1: 
@@ -126,6 +127,8 @@
         }
     }
 
+
+    //content
     function content_two(){
         let slideChecker = 0;
 
