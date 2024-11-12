@@ -4,7 +4,6 @@
 
     const nextBtn = document.querySelector('#nextBtn');
     const prevBtn = document.querySelector('#previousBtn');
-    const tab = document.querySelector('#tab');
 
     const opening = document.querySelector('#opening');
 
@@ -48,9 +47,11 @@
 
         toggle(counter); //label and on/off
 
-        switch(counter){ //action
-            case 2: content_two(); break;
-            case 4: content_four(); break;
+        if (counter == 2){
+            content_two();
+        }
+        else if (counter == 4){
+            content_four();
         }
     });
     prevBtn.addEventListener('click', function(){
@@ -61,9 +62,11 @@
 
         toggle(counter); //label and on/off
 
-        switch(counter){ //action
-            case 2: content_two(); break;
-            case 4: content_four(); break;
+        if (counter == 2){
+            content_two();
+        }
+        else if (counter == 4){
+            content_four();
         }
     });
 
@@ -71,7 +74,6 @@
     function toggle(object){
         switch(object){
             case 1: 
-                tab.innerHTML = 'Private';
                 opening.className = 'content hidden';
                 lowestRank.className = 'content showing';
                 privatE.className = 'content hidden';
@@ -80,7 +82,6 @@
                 closing.className = 'content hidden';
                 break;
             case 2: 
-                tab.innerHTML = 'Private 1st Class';
                 opening.className = 'content hidden';
                 lowestRank.className = 'content hidden';
                 privatE.className = 'content showing';
@@ -89,7 +90,6 @@
                 closing.className = 'content hidden';
                 break;
             case 3: 
-                tab.innerHTML = 'Corporal';
                 opening.className = 'content hidden';
                 lowestRank.className = 'content hidden';
                 privatE.className = 'content hidden';
@@ -98,7 +98,6 @@
                 closing.className = 'content hidden';
                 break;
             case 4: 
-                tab.innerHTML = 'Sergant';
                 opening.className = 'content hidden';
                 lowestRank.className = 'content hidden';
                 privatE.className = 'content hidden';
@@ -107,7 +106,6 @@
                 closing.className = 'content hidden';
                 break;
             case 5: 
-                tab.innerHTML = 'Ending'; 
                 opening.className = 'content hidden';
                 lowestRank.className = 'content hidden';
                 privatE.className = 'content hidden';
@@ -116,7 +114,6 @@
                 closing.className = 'content showing';
                 break;
             default: 
-                tab.innerHTML = 'Opening';
                 opening.className = 'content showing';
                 lowestRank.className = 'content hidden';
                 privatE.className = 'content hidden';

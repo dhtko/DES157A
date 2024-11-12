@@ -19,18 +19,6 @@ img{
 header{
     text-align: center;
 }
-#tab{
-    width: 180px;
-    text-align: center;
-    background-color: orange;
-    border-top: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    
-    position: absolute;
-    top: 7%;
-    right: 26%;
-}
 #screen{
     display: flex;
     flex-direction: row;
@@ -51,8 +39,6 @@ header{
 
     width: 988px;
     height: 620px;
-
-    position: absolute;
 }
 #previousBtn{
     margin: 0px 15px;
@@ -77,6 +63,18 @@ header{
     transform: rotate(0deg);
 
     background: transparent;
+}
+.rankTab{
+    width: 180px;
+    text-align: center;
+    background-color: orange;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
 }
 
 
@@ -131,6 +129,15 @@ header{
 }
 
 
+/*content0: opening*/
+#opening{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 /*content 1: private*/
 #private{
     background: url('./images/notepad.jpg');
@@ -138,6 +145,11 @@ header{
 
     display: flex;
     flex-direction: row;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .private_photo{
     flex: 1;
@@ -154,6 +166,11 @@ header{
 #private1stClass{
     background: url('./images/notepad.jpg');
     background-size: 60%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 #second_content{
     display: flex;
@@ -189,12 +206,22 @@ header{
 /*content 3: corporal*/
 #corporal{
     background-color: pink;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /*content 4: sergant*/
 #sergant{
     background-image: url('./images/sgt_background.jpg');
     background-size: cover;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .snapshot{
     background: rgba(0,0,0,0.5);
@@ -308,16 +335,24 @@ header{
     opacity: 0.75;
 }
 
+/*content 5: ending*/
+#closing{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 /*font*/
 header h1{
     margin: 0px;
-    padding: 0px 0px 30px 0px;
+    padding: 15px 0px 30px 0px;
     
     font-family: "Hammersmith One";
     font-size: 60px;
 }
-#tab{
+.rankTab{
     padding: 5px 0px;
     
     font-family: "Palanquin Dark";
