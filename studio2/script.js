@@ -158,18 +158,56 @@
     function content_three(){
         cpl_photoGrid.addEventListener('mousemove', function(event){
             const xPos = event.clientX;
-            console.log(`xPos : ${xPos}`);
+            //console.log(`xPos : ${xPos}`);
+            
+            const photoWidth = cpl_photos[0].width + 40;
+            const firstStart = 319;
+            const firstEnd = 319 + photoWidth; //559
+            const secondStart = firstEnd + 10; //569
+            const secondEnd = secondStart + photoWidth; //809
+            const thirdStart = secondEnd + 10; //819
+            const thirdEnd = thirdStart + photoWidth; //1059
+            const fourthStart = thirdEnd + 10; //1069
+            const fourthEnd = fourthStart + photoWidth; //1309
+            
             let photoOpacity = 0;
 
-            console.log(cpl_photos[0].width);
+            if (xPos > firstStart && xPos < firstEnd){
+                photoOpacity = opacityCalculate(xPos, firstStart, firstEnd);
+                cpl_photos[0].style.opacity = photoOpacity;
+                cpl_photos[4].style.opacity = photoOpacity
+            }
+            else if (xPos > secondStart && xPos < secondEnd){
+                photoOpacity = opacityCalculate(xPos, secondStart, secondEnd);
+                cpl_photos[1].style.opacity = photoOpacity;
+                cpl_photos[5].style.opacity = photoOpacity
+            }
+            else if (xPos > thirdStart && xPos < thirdEnd){
+                photoOpacity = opacityCalculate(xPos, thirdStart, thirdEnd);
+                cpl_photos[2].style.opacity = photoOpacity;
+                cpl_photos[6].style.opacity = photoOpacity
+            }
+            else if (xPos > fourthStart && xPos < fourthEnd){
+                photoOpacity = opacityCalculate(xPos, fourthStart, fourthEnd);
+                cpl_photos[3].style.opacity = photoOpacity;
+                cpl_photos[7].style.opacity = photoOpacity
+            }
+            else{
+                for (const eachPhoto of cpl_photos){
+                    eachPhoto.style.opacity = 0;
+                }
+            }
+
 
 
         });
     }
-    function calculate(pos, start, end){
+    function opacityCalculate(pos, start, end){
         const range = end - start;
-        const result = pos / range;
-        return result;
+        const occupied = pos - start;
+        const rawResult = occupied / range;
+        const theResult = Math.round(rawResult * 100) / 100;
+        return theResult;
     }
 
     function content_four(){

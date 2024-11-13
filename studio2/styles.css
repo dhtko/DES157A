@@ -229,9 +229,9 @@ header{
     height: 190px;
 
     margin: 0px;
-    padding-left: 20px;
+    padding: 0px 20px;
 
-    opacity: 1;
+    opacity: 0;
 }
 
 /*content 4: sergant*/
