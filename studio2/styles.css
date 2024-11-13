@@ -6,15 +6,19 @@ img{
 }
 
 /*frames*/
+body{
+    background-color: orange;
+}
 #container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
 
-    border: 5px solid black;
     max-width: 1200px;
     max-height: 750px;
+
+    background: transparent;
 }
 header{
     text-align: center;
@@ -101,7 +105,7 @@ header{
     width: 400px;
 }
 .private_photo img{
-    width: 440px;
+    width: 410px;
     transition: all 1s ease;
 }
 .private_photo img:hover{
@@ -109,7 +113,7 @@ header{
     box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.75);
 }
 #privateImage1{
-    height: 320px;
+    height: 310px;
 }
 #slideshow img{
     border: 15px solid gray;

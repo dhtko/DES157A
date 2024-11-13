@@ -158,11 +158,11 @@
     function content_three(){
         cpl_photoGrid.addEventListener('mousemove', function(event){
             const xPos = event.clientX;
-            //console.log(`xPos : ${xPos}`);
-            
+            console.log(xPos);
             const photoWidth = cpl_photos[0].width + 40;
-            const firstStart = 319;
-            const firstEnd = 319 + photoWidth; //559
+            
+            const firstStart = 0;
+            const firstEnd = firstStart + photoWidth; //559
             const secondStart = firstEnd + 10; //569
             const secondEnd = secondStart + photoWidth; //809
             const thirdStart = secondEnd + 10; //819
@@ -175,22 +175,22 @@
             if (xPos > firstStart && xPos < firstEnd){
                 photoOpacity = opacityCalculate(xPos, firstStart, firstEnd);
                 cpl_photos[0].style.opacity = photoOpacity;
-                cpl_photos[4].style.opacity = photoOpacity
+                cpl_photos[4].style.opacity = photoOpacity;
             }
             else if (xPos > secondStart && xPos < secondEnd){
                 photoOpacity = opacityCalculate(xPos, secondStart, secondEnd);
                 cpl_photos[1].style.opacity = photoOpacity;
-                cpl_photos[5].style.opacity = photoOpacity
+                cpl_photos[5].style.opacity = photoOpacity;
             }
             else if (xPos > thirdStart && xPos < thirdEnd){
                 photoOpacity = opacityCalculate(xPos, thirdStart, thirdEnd);
                 cpl_photos[2].style.opacity = photoOpacity;
-                cpl_photos[6].style.opacity = photoOpacity
+                cpl_photos[6].style.opacity = photoOpacity;
             }
             else if (xPos > fourthStart && xPos < fourthEnd){
                 photoOpacity = opacityCalculate(xPos, fourthStart, fourthEnd);
                 cpl_photos[3].style.opacity = photoOpacity;
-                cpl_photos[7].style.opacity = photoOpacity
+                cpl_photos[7].style.opacity = photoOpacity;
             }
             else{
                 for (const eachPhoto of cpl_photos){
@@ -198,8 +198,11 @@
                 }
             }
 
-
-
+        });
+        cpl_photoGrid.addEventListener('mouseout', function(){
+            for (const eachPhoto of cpl_photos){
+                eachPhoto.style.opacity = 0;
+            }
         });
     }
     function opacityCalculate(pos, start, end){
