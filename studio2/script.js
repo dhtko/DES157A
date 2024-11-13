@@ -45,7 +45,7 @@
             counter = 5;
         }
 
-        toggle(counter); //label and on/off
+        toggle(counter); //on/off
 
         if (counter == 2){
             content_two();
@@ -60,7 +60,7 @@
             counter = 0;
         }
 
-        toggle(counter); //label and on/off
+        toggle(counter); //on/off
 
         if (counter == 2){
             content_two();
@@ -70,7 +70,7 @@
         }
     });
 
-    //label + switching contents
+    //switching contents
     function toggle(object){
         switch(object){
             case 1: 
