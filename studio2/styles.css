@@ -23,6 +23,7 @@ body{
 header{
     text-align: center;
 }
+
 #screen{
     display: flex;
     flex-direction: row;
@@ -34,14 +35,16 @@ header{
     height: 620px;
 
     border-style: inset;
-    border: 12px solid brown;
+    border: 20px solid rgb(78, 16, 16);
+    border-radius: 15px;
 
     position: relative;
 }
 .content{
-    width: 988px;
+    width: 972px;
     height: 620px;
 }
+
 #previousBtn{
     margin: 0px 15px;
 
@@ -49,10 +52,15 @@ header{
     height: 0px;
     border-style: solid;
     border-width: 30px 52px 30px 0;
-    border-color: transparent #FF4532 transparent transparent;
+    border-color: transparent white transparent transparent;
     transform: rotate(0deg);
-
     background: transparent;
+
+    transition: all 0.25s ease;
+}
+#previousBtn:hover{
+    border-color: transparent #FF4532 transparent transparent;
+    transition: all 0.25s ease;
 }
 #nextBtn{
     margin: 0px 15px;
@@ -61,11 +69,17 @@ header{
     height: 0px;
     border-style: solid;
     border-width: 30px 0 30px 52.0px;
-    border-color: transparent transparent transparent #FF4532;
+    border-color: transparent transparent transparent white;
     transform: rotate(0deg);
-
     background: transparent;
+
+    transition: all 0.25s ease;
 }
+#nextBtn:hover{
+    border-color: transparent transparent transparent #FF4532;
+    transition: all 0.25s ease;
+}
+
 .rankTab{
     width: 180px;
     text-align: center;
@@ -95,7 +109,7 @@ header{
     margin-left: auto;
     margin-right: auto;
 
-    border: 15px solid black;
+    border: 15px solid rgb(239, 239, 239);
     border-style: double;
 }
 #opening img{
@@ -126,7 +140,7 @@ header{
     border-style: double;
 }
 #closing img{
-    width: 400px;
+    width: 350px;
 }
 
 
@@ -137,7 +151,7 @@ header{
     left: 50%;
     transform: translate(-50%, -50%);
 
-    background-color: skyblue;
+    background: url('./images/cover.jpg');
 }
 
 
@@ -379,7 +393,7 @@ header{
     left: 50%;
     transform: translate(-50%, -50%);
 
-    background-color: lightgreen;
+    background: url('./images/cover.jpg');
 }
 
 
@@ -402,11 +416,16 @@ header h1{
 }
 #opening h2, #closing h2{
     font-family: "Alata";
-    font-size: 40px;
+    font-size: 45px;
+    color: rgb(78, 231, 255);
+
+    margin: 0px;
+    padding: 30px;
 }
 #opening h3, #closing h3{
     font-family: "Kumbh Sans";
     font-size: 25px;
+    color: rgb(29, 180, 255);
 }
 
 .private_photo h2{
@@ -469,6 +488,7 @@ header h1{
 
 figcaption{
     font-family: "Roboto";
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.8em;
+    color: rgb(239, 239, 239);
 }
