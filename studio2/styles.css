@@ -7,7 +7,7 @@ img{
 
 /*frames*/
 body{
-    background-color: orange;
+    background: rgb(32, 74, 27);
 }
 #container{
     display: flex;
@@ -97,10 +97,14 @@ header{
 .hidden{
     visibility: hidden;
     opacity: 0;
+
+    transition: all 0.2s ease;
 }
 .showing{
     visibility: visible;
     opacity: 1;
+
+    transition: all 0.2s ease;
 }
 
 
@@ -400,10 +404,11 @@ header{
 /*font*/
 header h1{
     margin: 0px;
-    padding: 20px 0px 20px 0px;
+    padding: 20px 0px 10px 0px;
     
     font-family: "Hammersmith One";
     font-size: 60px;
+    color: rgb(188, 236, 255);
 }
 .rankTab{
     padding: 5px 0px;
