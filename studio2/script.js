@@ -16,6 +16,8 @@
     const slide = document.querySelector('#privateImage');
 
     const corporal = document.querySelector('#corporal');
+    const cpl_photoGrid = document.querySelector('#cpl_photoGrid');
+    const cpl_photos = document.querySelectorAll('.cpl_photo');
 
     const sergant = document.querySelector('#sergant');
     const outer_sgt_one = document.querySelector('#outer_sgt_one');
@@ -50,6 +52,9 @@
         if (counter == 2){
             content_two();
         }
+        else if (counter == 3){
+            content_three();
+        }
         else if (counter == 4){
             content_four();
         }
@@ -64,6 +69,9 @@
 
         if (counter == 2){
             content_two();
+        }
+        else if (counter == 3){
+            content_three();
         }
         else if (counter == 4){
             content_four();
@@ -145,6 +153,23 @@
             }
             slide.src = `images/${slideImages[slideChecker]}`;
         });
+    }
+
+    function content_three(){
+        cpl_photoGrid.addEventListener('mousemove', function(event){
+            const xPos = event.clientX;
+            console.log(`xPos : ${xPos}`);
+            let photoOpacity = 0;
+
+            console.log(cpl_photos[0].width);
+
+
+        });
+    }
+    function calculate(pos, start, end){
+        const range = end - start;
+        const result = pos / range;
+        return result;
     }
 
     function content_four(){

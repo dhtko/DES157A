@@ -221,7 +221,7 @@ header{
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat (2, auto);
+    grid-template-rows: repeat(2, auto);
     gap: 10px 10px;
 }
 .cpl_photo{
