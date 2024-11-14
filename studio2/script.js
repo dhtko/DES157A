@@ -158,18 +158,19 @@
     function content_three(){
         cpl_photoGrid.addEventListener('mousemove', function(event){
             const xPos = event.clientX;
-            console.log(xPos);
-            const photoWidth = cpl_photos[0].width + 40;
-            
-            const firstStart = 0;
-            const firstEnd = firstStart + photoWidth; //559
-            const secondStart = firstEnd + 10; //569
-            const secondEnd = secondStart + photoWidth; //809
-            const thirdStart = secondEnd + 10; //819
-            const thirdEnd = thirdStart + photoWidth; //1059
-            const fourthStart = thirdEnd + 10; //1069
-            const fourthEnd = fourthStart + photoWidth; //1309
-            
+            const photoWidth = cpl_photos[0].width + 32;
+            const gridHalf = (window.innerWidth) / 2;
+
+            const thirdStart = gridHalf + 5;
+            const thirdEnd = thirdStart + photoWidth;
+            const fourthStart = thirdEnd + 10; 
+            const fourthEnd = fourthStart + photoWidth;
+
+            const secondEnd = gridHalf - 5;
+            const secondStart = secondEnd - photoWidth;
+            const firstEnd = secondStart - 10;
+            const firstStart = firstEnd - photoWidth;
+
             let photoOpacity = 0;
 
             if (xPos > firstStart && xPos < firstEnd){
