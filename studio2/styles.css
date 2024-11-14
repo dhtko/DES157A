@@ -52,14 +52,14 @@ header{
     height: 0px;
     border-style: solid;
     border-width: 30px 52px 30px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent rgb(168,168,168) transparent transparent;
     transform: rotate(0deg);
     background: transparent;
 
     transition: all 0.25s ease;
 }
 #previousBtn:hover{
-    border-color: transparent #FF4532 transparent transparent;
+    border-color: transparent rgb(171, 248, 255) transparent transparent;
     transition: all 0.25s ease;
 }
 #nextBtn{
@@ -69,14 +69,14 @@ header{
     height: 0px;
     border-style: solid;
     border-width: 30px 0 30px 52.0px;
-    border-color: transparent transparent transparent white;
+    border-color: transparent transparent transparent rgb(168,168,168);
     transform: rotate(0deg);
     background: transparent;
 
     transition: all 0.25s ease;
 }
 #nextBtn:hover{
-    border-color: transparent transparent transparent #FF4532;
+    border-color: transparent transparent transparent rgb(171, 248, 255);
     transition: all 0.25s ease;
 }
 
@@ -134,9 +134,12 @@ header{
     height: 310px;
 }
 #slideshow img{
-    border: 15px solid gray;
-    border-style: groove;
+    border: 20px solid rgb(62, 54, 54);
+    border-style: double;
+    border-radius: 13px;
     width: 500px;
+
+    margin-bottom: 10px;
 }
 .profile img{
     width: 430px;
@@ -199,27 +202,28 @@ header{
     padding: 20px;
     gap: 20px;
 }
-#slide_links{
+#slide_buttons{
     display: flex;
-    width: 530px;
-    margin: auto;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 #slideshow button{
     text-decoration: none;
     
     display: block;
-    flex: 1;
+    width: 200px;
 
-    background: red;
+    background: rgb(168, 168, 168);
     text-align: center;
     height: 50px;
     line-height: 1.2em;
 
     transition: all 1s ease;
-    border: none;
+    border: solid 3px rgb(62,54,54);
+    border-radius: 10px;
 }
 #slideshow button:hover{
-    background: blue;
+    background: rgb(171, 248, 255);
     transition: all 1s ease;
 }
 
@@ -349,7 +353,7 @@ header{
 .overlay{
     background-color: rgba(223, 223, 223, 0.8);
 
-    width: 988px;
+    width: 972px;
     height: 620px;
     
     position: absolute;
@@ -485,10 +489,15 @@ header h1{
     line-height: 1.3em;
 }
 
-.overlay button, #slideshow button{
+.overlay button{
     font-family: "Roboto";
     font-size: 18px;
     color: white;
+}
+#slideshow button{
+    font-family: "Roboto";
+    font-size: 18px;
+    color: black;
 }
 
 figcaption{

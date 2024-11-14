@@ -13,7 +13,7 @@
     const slideNext = document.querySelector('#slideNext');
     const slidePrevious = document.querySelector('#slidePrevious');
     const slideImages = ['slideshow_1.jpg', 'slideshow_2.jpg', 'slideshow_3.jpg', 'slideshow_4.jpg', 'slideshow_5.jpg'];
-    const slide = document.querySelector('#privateImage');
+    const slide = document.querySelector('#slideImage');
 
     const corporal = document.querySelector('#corporal');
     const cpl_photoGrid = document.querySelector('#cpl_photoGrid');
