@@ -1,5 +1,5 @@
 body{
-    background-color: orange;
+    background-color: #ffefcd;
 }
 
 #container{
@@ -8,10 +8,10 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     
-    background-color: wheat;
+    background-color: #f4eddc;
     border-radius: 10px;
     
-    width: 600px;
+    width: 700px;
     padding: 20px;
 
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -21,10 +21,18 @@ header h1{
     text-align: center;
     
     margin: 0px;
-    padding-bottom: 20px;
+    padding: 20px 0px;
+
+    font-family: 'Comfortaa';
+    font-size: 55px;
 }
 main p{
     margin: 0px;
+    padding: 0px;
+
+    font-family: 'Quicksand';
+    font-size: 18px;
+    line-height: 1.5em;
 }
 
 
