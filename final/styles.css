@@ -1,15 +1,30 @@
-#container{
-    display: grid;
-    place-items: center;
-
-    background-color: white;
-
-    max-width: 800px;
-    max-height: 900px;
-    padding: 10px;
-}
-
 body{
     background-color: orange;
 }
+
+#container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background-color: wheat;
+    border-radius: 10px;
+    
+    width: 600px;
+    padding: 20px;
+
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+header h1{
+    text-align: center;
+    
+    margin: 0px;
+    padding-bottom: 20px;
+}
+main p{
+    margin: 0px;
+}
+
 
