@@ -1,0 +1,15 @@
+#container{
+    display: grid;
+    place-items: center;
+
+    background-color: white;
+
+    max-width: 800px;
+    max-height: 900px;
+    padding: 10px;
+}
+
+body{
+    background-color: orange;
+}
+
