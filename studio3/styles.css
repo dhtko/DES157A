@@ -10,6 +10,9 @@ a{
 label{
     text-decoration: none;
 }
+img{
+    display: block;
+}
 
 
 /*structure*/
@@ -28,9 +31,9 @@ body{
     height: 750px;
     
     background: url('./images/baseballField.png');
-    background-size: 110%;
-    background-position-x: -60px;
-    background-position-y: -50px;
+    background-size: 100%;
+    background-position-x: -0px;
+    background-position-y: -30px;
     
     border: 1px solid black;
 }
@@ -50,12 +53,11 @@ main{
 /*styling*/
 #instruction{
     position: absolute;
-    top: 0%;
-    right: 0%;
+    top: 0.5%;
+    right: 0.5%;
     
     width: 100px;
-    height: 100px;
-    background-color: red;
+    height: 100px;    
 }
 
 #inning{
@@ -145,7 +147,8 @@ button{
 /*font*/
 h1{
     text-align: center;
-    padding: 20px 0px;
+    padding: 10px 0px;
+    font-size: 45px;
 }
 #inning h2{
     color: #A9A9A9;
