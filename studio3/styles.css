@@ -1,3 +1,123 @@
+/*reset*/
+h1, h2, h3{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/*structure*/
 body{
     background-color: gray;
 }
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+
+    background-color: orange;
+    position: relative;
+
+    width: 1200px;
+    height: 750px;
+    border: 1px solid black;
+}
+header{
+    flex: 1;
+}
+main{
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+/*styling*/
+#instruction{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+#inning{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    
+    text-align: center;
+    padding: 10px;
+}
+
+#gameField{
+    background: pink;
+    height: 400px;
+
+    padding: 10px;
+    text-align: center;
+
+    /*display: flex;
+    flex-direction: column;
+    justify-content: space-around;*/
+}
+#strikeZone{
+    padding: 0px;
+    margin: 50px 0px;
+}
+#strike{
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+
+    background-color: brown;
+    text-align: center;
+    color: white;
+}
+#pitcher{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    padding: 0px;
+    margin: 50px 0px;
+}
+button{
+    align-self: center;
+    width: 100px;
+}
+#surrender{
+    padding: 0px;
+    margin: 70px 0px;
+}
+
+#record{
+    width: 200px;
+    height: 400px;
+    background-color: skyblue;
+
+    padding: 10px;
+    text-align: center;
+}
+
+
+/*font*/
+h1{
+    text-align: center;
+    padding: 20px 0px;
+}
+#inning h3{
+    padding: 60px 0px;
+}
+#strike h3{
+    padding: 14px 0px;
+}
+

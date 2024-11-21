@@ -17,11 +17,39 @@
     <title>Game On!</title>
 </head>
 <body>
-    <header>
-        <h1>Numeric Baseball</h1>
-    </header>
-    <main>
-        <p>Hello</p>
-    </main>
+    <div id="container">
+        <header>
+            <h1>Numeric Baseball</h1>
+        </header>
+
+        <div id="instruction"></div>
+        
+        <main>
+            <div id="inning">
+                <h2>Current Inning</h2>
+                <h3>1</h3>
+            </div>
+
+            <div id="gameField">
+
+                <section id="strikeZone">
+                    <h2>Strike Zone</h2>
+                    <div id="strike"><h3>?</h3></div>
+                </section>
+
+                <form id="pitcher">
+                    <label>Pitcher Up!</label>
+                    <input type="text" name="pitchingZone" id="pitchingZone">
+                    <button>Go!</button>
+                </form>
+                
+                <a href="#" id="surrender"><h3>Surrender?</h3></a>
+            </div>
+
+            <div id="record">
+                <h2>Record</h2>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
