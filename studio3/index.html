@@ -8,6 +8,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
     <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@700&family=Electrolize&family=Figtree:wght@600&family=Gantari:wght@700&family=Poppins&family=Quantico&family=Quicksand:wght@300&family=Urbanist&display=swap" rel="stylesheet">
 
     <!--StyleSheet-->
     <link href="./styles.css" rel="stylesheet">
@@ -41,7 +44,7 @@
                 <form id="pitcher">
                     <label>Pitcher Up!</label>
                     <input type="text" name="pitchingZone" id="pitchingZone">
-                    <button>Go!</button>
+                    <button id="throw">Go!</button>
                 </form>
                 
                 <a href="#" id="surrender"><h3>Surrender?</h3></a>
@@ -49,9 +52,23 @@
 
             <div id="record">
                 <h2>Record</h2>
+                <p id="history"></p>
             </div>
 
         </main>
+        
+        <div id="overlay" class="hidden">
+            <article id="instruction">
+                <h2>Instruction on Numeric Baseball</h2>
+                <p>
+                    Numeric Baseball aims to find the four-digit hidden number in the strike zone within the nine innings.<br>
+                    <br>When you enter your four-digit guessing number and hit the "GO!" button, the guessing result will display on "Record." The result has three categories: ball(correct number, but wrong position), strike (correct number and correct position), and out(wrong number).<br>
+                    <br>That is all the information need to enjoy the game. To refer to the instructions again, click the question mark in the top right corner.
+                </p>
+                <button id="close">Let the Game Begin!</button>
+            </article>
+        </div>
+
     </div>
 </body>
 </html>
