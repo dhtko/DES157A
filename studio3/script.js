@@ -13,6 +13,7 @@
 
     const windup = document.querySelector('#throw');
     const strike = document.querySelector('#hiddenNumber');
+    const history = document.querySelector('#history');
 
 
     //set up the answer (from star-trek-game)
@@ -53,41 +54,53 @@
     //throw the ball
     windup.addEventListener('click', function(event){
         event.preventDefault();
+        
 
         //check any errors in user input
         const pitching = document.querySelector('#pitchingZone').value;
         if (isNaN(pitching)){ //if user entered string, warn without increasing the count
             alert('You must type in four-digit NUMBERS to throw the ball');
             document.querySelector('#pitchingZone').focus();
-            count -= 1;
         }
         else if (pitching.length > 0 && pitching.length < 4){ //if user entered a 1 to 3 digits number , warn without increasing the count
             alert('You must type in FOUR-DIGIT numbers to throw the ball');
             document.querySelector('#pitchingZone').focus();
-            count -= 1;
         }
         else if (pitching.length > 4){ //if user entered a number more than 4 digits, warn without increasing the count
             alert('You must type in FOUR-DIGIT numbers to throw the ball');
             document.querySelector('#pitchingZone').focus();
-            count -= 1;
         }
         else if (pitching == ''){
             alert('You MUST TYPE in four-digit numbers to throw the ball');
             document.querySelector('#pitchingZone').focus();
             count -= 1;
         }
+        else{ //passed through all errorchecks
+            
+            turnCheck();
+
+            //update the past actions on the record display
+            history.innerHTML += `${pitching}<br><br>`;
+            
+        }
         
-        //inning scoreboard
+    
+        
+        
+    });
+
+    function turnCheck(){
         if (count > 9){
-            strike.innerHTML = strikeZoneNum;
             alert('You Lost!');
+            strike.innerHTML = strikeZoneNum;
         }
         else{
             count += 1;
             timer.innerHTML = count;
         }
-        
-    });
+    }
+
+    
 
 
 
