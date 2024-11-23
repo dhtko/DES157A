@@ -15,6 +15,8 @@
     const strike = document.querySelector('#hiddenNumber');
     const history = document.querySelector('#history');
 
+    const afterGame = document.querySelector('#afterGameInstruction');
+
 
     //set up the answer (from star-trek-game)
     function setStrikeZone(){
@@ -35,12 +37,11 @@
     setStrikeZone();
     console.log(strikeZone);
     
-    //answer for display only
+    //set up a copy of the answer for display
     const strikeZoneNum = strikeZone.map(Number);
 
 
-
-
+    
     //opening, closing instruction
     instruction.addEventListener('click', function(){
         overlay.className = 'showing';
@@ -77,22 +78,21 @@
         }
         else{ //passed through all errorchecks
             
+            //manage timer, count
             turnCheck();
 
             //update the past actions on the record display
             history.innerHTML += `${pitching}<br><br>`;
-            
         }
         
-    
-        
-        
+
     });
 
     function turnCheck(){
-        if (count > 9){
+        if (count > 9){ //failed all attempts
             alert('You Lost!');
             strike.innerHTML = strikeZoneNum;
+            afterGame.className = 'showing';
         }
         else{
             count += 1;
