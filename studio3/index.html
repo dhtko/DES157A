@@ -31,18 +31,18 @@
             
             <div id="inning" class="board">
                 <h2>Current Inning</h2>
-                <h3>1</h3>
+                <h3 id="timer">1</h3>
             </div>
 
             <div id="gameField">
 
                 <section id="strikeZone">
                     <h2>Strike Zone</h2>
-                    <div id="strike"><h3>?</h3></div>
+                    <div id="strike"><h3 id="hiddenNumber">?</h3></div>
                 </section>
 
                 <form id="pitcher">
-                    <label>Pitcher Up!</label>
+                    <label for="pitchingZone">Pitcher Up!</label>
                     <input type="text" name="pitchingZone" id="pitchingZone">
                     <button id="throw">Go!</button>
                 </form>
@@ -57,7 +57,7 @@
 
         </main>
         
-        <div id="overlay" class="hidden">
+        <div id="overlay" class="showing">
             <article id="instruction">
                 <h2>Instruction on Numeric Baseball</h2>
                 <p>
