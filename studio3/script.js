@@ -84,15 +84,12 @@
             //check the user input
             const [greenCount, orangeCount, redCount] = baseballCount(strikeZone, pitching);
             
-            //check winning condition
+            //check winning condition (if winning condition met, then the game reveals the hidden number and let user know that the game is over)
             winningCheck(orangeCount);
-
-
 
             //update the past actions on the record display
             history.innerHTML += `${pitching}) ${greenCount}Ball ${orangeCount}Strike ${redCount}Out<br><br>`;
 
-            
         }
         
 
