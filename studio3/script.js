@@ -71,7 +71,7 @@
             alert('You must type in FOUR-DIGIT numbers to throw the ball');
             document.querySelector('#pitchingZone').focus();
         }
-        else if (pitching == ''){
+        else if (pitching == ''){ //if user did not enter anything, warn them to type 4 digit number
             alert('You MUST TYPE in four-digit numbers to throw the ball');
             document.querySelector('#pitchingZone').focus();
             count -= 1;
@@ -81,8 +81,18 @@
             //manage timer, count
             turnCheck();
 
+            //check the user input
+            const [greenCount, orangeCount, redCount] = baseballCount(strikeZone, pitching);
+            
+            //check winning condition
+            winningCheck(orangeCount);
+
+
+
             //update the past actions on the record display
-            history.innerHTML += `${pitching}<br><br>`;
+            history.innerHTML += `${pitching}) ${greenCount}Ball ${orangeCount}Strike ${redCount}Out<br><br>`;
+
+            
         }
         
 
@@ -100,9 +110,40 @@
         }
     }
 
-    
+    function baseballCount(hiddenNum, guessingNum){
+        let greenCount = 0;
+        let orangeCount = 0;
+        let rawRedCount = 0;
+        let realRedCount = 0;
 
+        for (let i = 0; i < guessingNum.length; i++){
+            if (guessingNum[i] == hiddenNum[i]){ //checking strike condition
+                orangeCount += 1; 
+            }
+            else{
+                for (let j = 0; j < hiddenNum.length; j++){ //comparing a guessing number to all other numbers in hiddenNum
+                    if (guessingNum[i] == hiddenNum[j]){ //checking ball condition
+                        greenCount += 1;
+                    }
+                    else{
+                        rawRedCount += 1; //for out condition (when a number does not match any of the guessing number), basically count all unmatched conditions divided by four since four count equals to one full out count. Then, round down the division and use it as the actual redCount
+                    }
+                }
+            }
+        }
 
+        realRedCount = Math.floor(rawRedCount / 4); //applying out condition
+        
 
-    
+        return [greenCount, orangeCount, realRedCount];
+    }
+
+    function winningCheck(orangeCount){
+        if (orangeCount == 4){
+            alert('You Won!');
+            strike.innerHTML = strikeZoneNum;
+            afterGame.className = 'showing';
+        }
+    }
+
 })();
