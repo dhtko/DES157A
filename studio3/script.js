@@ -17,6 +17,13 @@
 
     const afterGame = document.querySelector('#afterGameInstruction');
 
+    //soundFiles
+    const pitchSound = new Audio('./sounds/goButton.mp3');
+    const recordSound = new Audio('./sounds/updateRecord.mp3');
+    const winSound = new Audio('./sounds/youWin.mp3');
+    const loseSound = new Audio('./sounds/youLose.mp3');
+    const beginningSound = new Audio('./sounds/playBall.mp3');
+
 
     //set up the answer (from star-trek-game)
     function setStrikeZone(){
@@ -47,6 +54,7 @@
         overlay.className = 'showing';
     });
     close.addEventListener('click', function(){
+        beginningSound.play();
         overlay.className = 'hidden';
     });
 
@@ -55,6 +63,7 @@
     //throw the ball
     windup.addEventListener('click', function(event){
         event.preventDefault();
+        pitchSound.play();
         
 
         //check any errors in user input
@@ -88,6 +97,7 @@
             winningCheck(orangeCount);
 
             //update the past actions on the record display
+            recordSound.play();
             history.innerHTML += `${pitching}) ${greenCount}Ball ${orangeCount}Strike ${redCount}Out<br><br>`;
 
         }
@@ -97,6 +107,7 @@
 
     function turnCheck(){
         if (count > 9){ //failed all attempts
+            loseSound.play();
             alert('You Lost!');
             strike.innerHTML = strikeZoneNum;
             afterGame.className = 'showing';
@@ -137,6 +148,7 @@
 
     function winningCheck(orangeCount){
         if (orangeCount == 4){
+            winSound.play();
             alert('You Won!');
             strike.innerHTML = strikeZoneNum;
             afterGame.className = 'showing';
