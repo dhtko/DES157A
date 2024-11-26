@@ -2,7 +2,7 @@
     'use strict';
     console.log('reading js');
 
-    const instruction = document.querySelector('#instruction');
+    const instruction = document.querySelector('#instructionImg');
     const overlay = document.querySelector('#overlay');
     const close = document.querySelector('#close');
 
