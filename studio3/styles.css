@@ -3,9 +3,10 @@ h1, h2, h3{
     margin: 0px;
     padding: 0px;
 }
-a{
+a, ul{
     color: inherit;
     text-decoration: none;
+    list-style-type: none;
 }
 label{
     text-decoration: none;
@@ -220,6 +221,22 @@ main{
     text-align: center;
 }
 
+footer{
+    padding: 10px;
+}
+
+/*source.html*/
+#sourceHeader{
+    padding: 20px 0px;
+    font-size: 65px;
+    color: rgb(235, 235, 235);
+}
+#sourceList a{
+    font-family: 'Quicksand';
+    font-size: 24px;
+    line-height: 2em;
+    color: #F8FF35;
+}
 
 /*font*/
 h1{
@@ -282,7 +299,7 @@ label{
 #history{
     color: orange;
     font-family: 'Poppins';
-    font-size: 17px;
+    font-size: 16px;
 }
 #instruction h2{
     text-align: center;
@@ -305,5 +322,9 @@ label{
     font-family: 'Commissioner';
     font-size: 26px;
 }
-
+footer a{
+    font-family: 'Quicksand';
+    font-size: 16px;
+    color: white;
+}
 

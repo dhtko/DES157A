@@ -18,11 +18,10 @@
     const afterGame = document.querySelector('#afterGameInstruction');
 
     //soundFiles
-    const pitchSound = new Audio('./sounds/goButton.mp3');
-    const recordSound = new Audio('./sounds/updateRecord.mp3');
-    const winSound = new Audio('./sounds/youWin.mp3');
-    const loseSound = new Audio('./sounds/youLose.mp3');
-    const beginningSound = new Audio('./sounds/playBall.mp3');
+    const pitchSound = new Audio('sounds/goButton.mp3');
+    const winSound = new Audio('sounds/youWin.mp3');
+    const loseSound = new Audio('sounds/youLose.mp3');
+    const beginningSound = new Audio('sounds/playBall.mp3');
 
 
     //set up the answer (from star-trek-game)
@@ -63,7 +62,7 @@
     //throw the ball
     windup.addEventListener('click', function(event){
         event.preventDefault();
-        pitchSound.play();
+        
         
 
         //check any errors in user input
@@ -96,10 +95,11 @@
             //check winning condition (if winning condition met, then the game reveals the hidden number and let user know that the game is over)
             winningCheck(orangeCount);
 
-            //update the past actions on the record display
-            recordSound.play();
-            history.innerHTML += `${pitching}) ${greenCount}Ball ${orangeCount}Strike ${redCount}Out<br><br>`;
+            //once everything has been checked (inpuit error, turn check, and winning condition), play the pitch sound
+            pitchSound.play();
 
+            //update the past actions on the record display
+            history.innerHTML += `${pitching}) ${greenCount}Ball ${orangeCount}Strike ${redCount}Out<br><br>`;
         }
         
 
@@ -147,7 +147,7 @@
     }
 
     function winningCheck(orangeCount){
-        if (orangeCount == 4){
+        if (orangeCount === 4){
             winSound.play();
             alert('You Won!');
             strike.innerHTML = strikeZoneNum;
