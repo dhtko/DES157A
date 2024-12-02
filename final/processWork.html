@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Normalize Stylesheet-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!--Stylesheet-->
+    <link href="./processStyles.css" rel="stylesheet">
+
     <title>Final Project</title>
 </head>
 <body>
@@ -12,7 +19,7 @@
     
     <main>
 
-        <section>
+        <section class="chapter">
             <h2>Description of Usability Test</h2>
             <p>
                 For the usability test, three users participated. Since I wanted the project to share my military experience with anyone who visited it, the users were selected to cover a wide range of audiences.<br>
@@ -21,67 +28,73 @@
             </p>
         </section>
 
-
-
-        <section>
+        <section class="chapter">
             <h2>Interview Questions</h2>
             <p>The interview questions are organized in five different categories to ensure the questions to assess the specific areas of the project.</p>
             
-            <h3>Category 1: Arrow Buttons (Section Navigator)</h3>
-            <ul>
-                <li>Do the buttons need to be in different locations?</li>
-                <li>Is the shape of the navigating buttons recognizable? Does the shape follow the expectations?</li>
-                <li>Does the color (especially when the cursor is hovering) interfere with the navigating experience? Does the color confuse when interacting with the buttons?</li>
-                <li>Does the buttons need additional text during interaction (like appearing text when the cursor hovers over it)?</li>
-            </ul>
+            <div class="category">
+                <h3>Category 1: Arrow Buttons (Section Navigator)</h3>
+                <ul>
+                    <li>Do the buttons need to be in different locations?</li>
+                    <li>Is the shape of the navigating buttons recognizable? Does the shape follow the expectations?</li>
+                    <li>Does the color (especially when the cursor is hovering) interfere with the navigating experience? Does the color confuse when interacting with the buttons?</li>
+                    <li>Does the buttons need additional text during interaction (like appearing text when the cursor hovers over it)?</li>
+                </ul>
+            </div>
 
-            <h3>Category 2: Section Titles</h3>
-            <ul>
-                <li>Does the title interfere with the content? Does your eyes catch the title first then the content?</li>
-                <li>Does it interfere with the interaction experience? if so how? Does the color confuse you? Does the visual aesthetic cause confusion in interaction?</li>
-            </ul>
+            <div class="category">
+                <h3>Category 2: Section Titles</h3>
+                <ul>
+                    <li>Does the title interfere with the content? Does your eyes catch the title first then the content?</li>
+                    <li>Does it interfere with the interaction experience? if so how? Does the color confuse you? Does the visual aesthetic cause confusion in interaction?</li>
+                </ul>
+            </div>
 
-            <h3>Category 3: Photo Interaction/Animation</h3>
-            <ul>
-                <li>Is the interaction intuitive? </li>
-                <li>Does it feel irrelevant to the content of each section? </li>
-                <li>Do you want more fancy, eye-catching animation to enrich the experience? For example, dedicated entering animation for each section?</li>
-            </ul>
+            <div class="category">
+                <h3>Category 3: Photo Interaction/Animation</h3>
+                <ul>
+                    <li>Is the interaction intuitive? </li>
+                    <li>Does it feel irrelevant to the content of each section? </li>
+                    <li>Do you want more fancy, eye-catching animation to enrich the experience? For example, dedicated entering animation for each section?</li>
+                </ul>
+            </div>
 
-            <h3>Category 4: Insturction on Interaction</h3>
-            <ul>
-                <li>Is the interaction simple and direct that it does not need any instruction? </li>
-                <li>If instruction is needed, how does it want to be displayed? Bold text, pop-up, or locate the instruction on the corners of the content?</li>
-            </ul>
+            <div class="category">
+                <h3>Category 4: Insturction on Interaction</h3>
+                <ul>
+                    <li>Is the interaction simple and direct that it does not need any instruction? </li>
+                    <li>If instruction is needed, how does it want to be displayed? Bold text, pop-up, or locate the instruction on the corners of the content?</li>
+                </ul>
+            </div>
 
-            <h3>Category 5: Outer Design (Border and Background)</h3>
-            <ul>
-                <li>Does the background and border color get in the experience?</li>
-                <li>If distracting, is it the color that softens the edges of the content that sores the eyes, or does the design feel so flat that it lowers the immersive experience?</li>
-                <li>Do you feel hollow that sound effects are necessary?</li>
-            </ul>
+            <div class="category">
+                <h3>Category 5: Outer Design (Border and Background)</h3>
+                <ul>
+                    <li>Does the background and border color get in the experience?</li>
+                    <li>If distracting, is it the color that softens the edges of the content that sores the eyes, or does the design feel so flat that it lowers the immersive experience?</li>
+                    <li>Do you feel hollow that sound effects are necessary?</li>
+                </ul>
+            </div>
         </section>
 
-
-
-        <section>
+        <section class="chapter">
             <h2>Test Results</h2>
 
-            <div>
+            <div class="interview">
                 <h3>User 1</h3>
                 <p>
                     During the first five minutes, user 1 had no problem interacting with the project since he naturally clicked the arrows outside the frames to navigate the different sections. However, I noticed that he tried to click the section title as the color of the title is the same as the color when the arrow buttons are on a hover state, resulting in him believing that the section title is also a separate button. In addition, I noticed that he stuttered when a new chapter was encountered since there were no instructions on photo interactions. According to the user, this reaction peaked during the sergeant section since the section was empty. He found the instructions in the second part of the test, but he wished the instruction was more noticeable in future iterations. The user did not feel that the frames and background bothered him throughout the interaction.
                 </p>
             </div>
 
-            <div>
+            <div class="interview">
                 <h3>User 2</h3>
                 <p>
                     Before interacting with the project, the user commented that the background and frames bothered her because she was not able to distinguish the frames from the background. When she started to interact with the project, she naturally clicked the arrow buttons. However, she clicked the section title during the interaction. She explained her action by stating that the color of the title is the same as the arrow buttons on hover, resulting in her believing that the section title must have its dedicated actions. She had no issue when interacting with photos since she read the entire text first before interacting with the photos. However, she wished the interactions were separated from the narrative as they are not mixed well. Finally, she commented that adding dedicated animations at the opening and closing would bring the cinematic vibe more clearly. 
                 </p>
             </div>
 
-            <div>
+            <div class="interview">
                 <h3>User 3</h3>
                 <p>
                     Initially, the user naturally interacted with the arrow buttons to move between the sections. However, as she navigated the last section where overlay contents were used, the user started to use the arrow buttons to navigate the overlay content. The user performed such an action because she thought the arrow buttons could move forward and backward on any content. While the user quickly caught the presence of the 'close' button, the action triggered me to consider the text when hovering over the arrow buttons. Also, the user clicked the section title, expecting an action to be performed. The user made such a thought because the color of the section title and the color of the arrow buttons are the same. The user commented that the interactions of the photos are simple, fun, and dynamic. However, the user stuttered whenever she faced the new section due to a lack of instruction. Finally, the user commented that the exterior design did not interrupt the experience, but she felt they were too hollow, and adding visual flares on them could improve the experience.
@@ -89,7 +102,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="chapter">
             <h2>Outcomes</h2>
             <p>
                 After conducting the usability tests on three different users, I have found some common pain points that need to be addressed. First, all users were confused about the section title, specifically they all perceived the titles as buttons with dedicated actions and clicked them at least once through their interaction. This trend was observed because the color of the title is the same as the color when the arrow buttons are in a hover state. In addition, I found that two users stuttered when they first encountered a new section due to a lack of instruction. Although the interactions are intuitive and direct, without the instructions, those advantages are meaningless. Finally, two users pointed out the lack of visual aesthetics in the exterior designs like frames and backgrounds. Since I mainly focused on the functionality of the project on the initial submission, such feedback is expected. Overall, the common pain points would be the top priority to be addressed in the final project.<br>
