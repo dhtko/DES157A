@@ -7,13 +7,17 @@ img{
 
 /*frames*/
 body{
-    background: rgb(78, 109, 84);
+    background: rgb(15, 15, 5);
 }
 #container{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 auto;
+    
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
 
     max-width: 1200px;
     max-height: 750px;
@@ -35,13 +39,15 @@ header{
     height: 620px;
 
     border-style: inset;
-    border: 20px solid rgb(78, 16, 16);
-    border-radius: 15px;
+    border: 10px solid rgb(24, 24, 24);
+    border-radius: 0px;
+
+    box-shadow: 0px 0px 50px 15px rgba(255,246,189,1);
 
     position: relative;
 }
 .content{
-    width: 972px;
+    width: 992px;
     height: 620px;
 }
 
@@ -356,7 +362,7 @@ figure{
 .overlay{
     background-color: rgba(223, 223, 223, 0.8);
 
-    width: 972px;
+    width: 992px;
     height: 620px;
     
     position: absolute;
@@ -410,13 +416,10 @@ figure{
 
 /*font*/
 header h1{
-    margin: 0px;
-    padding: 20px 0px 10px 0px;
-    
-    font-family: "Hammersmith One";
-    font-size: 60px;
-    color: rgb(41, 231, 75);
+    opacity: 1;
+    color: green;
 }
+
 .rankTab{
     padding: 0px;
     margin: 10px 0px;
@@ -427,7 +430,15 @@ header h1{
 #closing, #opening{
     text-align: center;
 }
-#opening h2, #closing h2{
+#opening h1{
+    font-family: "Hammersmith One";
+    font-size: 45px;
+    color: rgb(78, 231, 255);
+
+    margin: 0px;
+    padding: 30px;
+}
+#closing h2{
     font-family: "Alata";
     font-size: 45px;
     color: rgb(78, 231, 255);
