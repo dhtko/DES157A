@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Normalize CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Hammersmith+One&family=Inder&family=Kumbh+Sans&family=Palanquin+Dark&family=Roboto:wght@300&family=Shanti&family=Ysabeau+Office:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+    <!--Link to StyleSheet-->
+    <link href="./styles.css" rel="stylesheet">
+    
+    <title>EveryDay Picture Project</title>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div id="container"> <!--Centering the project-->
+        <header>
+            <h1>My Journey As Soldier</h1>
+        </header>
+        <main>
+            <div id="screen">
+
+                <button id="previousBtn"></button>    
+                
+                <div id="display">
+                
+                    <section id="opening" class="content showing">
+                        <h2>Lightning Division</h2>
+                        <figure>
+                            <img src="images/beginning.jpg" alt="start">
+                            <figcaption>Fast as Lightning! The 11th Company!</figcaption>
+                        </figure>
+                        <h3>11th Company 1st Platoon 3rd Squad</h3>
+                    </section>
+
+                    <div id="private" class="content hidden">
+                        <section class="private_photo">
+                            <h2>Beginning/Trainee</h2>
+                            <img src="images/private_1.png" alt="private image" id="privateImage1">
+                            <p>In South Korea, military service is mandatory, and every man (starting at age 18 or above) must be enlisted. I enlisted in the army in June 2021 and completed my service in December 2022 (18 months total). The picture was taken on the morning of the day of joining the army (if I am correct). Notice how my hair is short due to requirements that trainees should have before being enlisted. After I enlisted, I went through a trainee session (1 month), and it was fast; there were numerous exercises and simulations that I could not remember all. The session was tough, but it was an important step to becoming a soldier who can protect my country.</p>
+                        </section>
+                        <section class="private_photo">
+                            <h2>Private: Welcome Party</h2>
+                            <img src="images/private_2.jpg" alt="private image">
+                            <p>After I finished my training session, I got promoted to private rank and was assigned to my unit (11th Company, 1st Platoon, 3rd Squad). When I entered the dormitory, the members welcomed me with surprise firecrackers. It was surprising because I expected the unit to have a strict, rigid environment. However, it was the opposite, as the picture shows. The picture was taken during my welcome party, where Lieutenant Lim delivered fried chicken to the platoon. In addition, it was Friday night during the Olympic (Tokyo 2021) season, so it was the perfect time for chicken. *Try to find me, if you can.</p>
+                        </section>
+                        <div class="rankTab">Private</div>
+                    </div>
+
+                    <div id="private1stClass" class="content hidden">
+                        <div id="second_content">
+                            <div id="slideshow">
+                                <img src="images/slideshow_1.jpg" alt="slideshowimage" id="slideImage">
+                                <div id="slide_buttons">
+                                    <button id="slidePrevious">Previous</button>
+                                    <button id="slideNext">Next</button>
+                                </div>
+                            </div>
+                            <p>During my service as a private 1st class rank (promoted from private rank), there were numerous drills and teamwork training. During that time, the platoon members were regularly switched as Sergeant members were discharged and private members were assigned to the platoon. This change allowed me to have deep conversations with comrades and build private relationships with them.<br>
+                            <br>Although I was not able to take photos during drills (confidential information), I collected the photos taken during the teamwork training, like barbeque time, sports day, and late-night activities (i.e. mafia game).</p>
+                        </div>
+                        <div class="rankTab">Private 1st Class</div>
+                    </div>
+
+                    <div id="corporal" class="content hidden">
+                        <p>
+                            The military experience during corporal rank can be summarized in one word: peace. There were no drills, training, or any external work. Hence, I was able to have some time to reflect on myself and enjoy being a part of a community with strong teamwork. One great memory that I want to share during this time is the trip with the comrades who joined the army in the same month, known as the "Members of June." We went on the trip to celebrate our first year of military service, and the whole experience was wild and young: no planning, no thinking, just drinking and being young. The trip was not my style, but it was unforgettable. Move the cursor around to reveal the secret photos taken during the trip. 
+                        </p>
+
+                        <div id="cpl_photoGrid">
+                            <img src="./images/cpl_photo1.jpg" alt="gridPhoto" class="cpl_photo">
+                            <img src="./images/cpl_photo2.jpg" alt="gridPhoto" class="cpl_photo">
+                            <img src="./images/cpl_photo3.jpg" alt="gridPhoto" class="cpl_photo">
+                            <img src="./images/cpl_photo4.jpg" alt="gridPhoto" class="cpl_photo">
+                            <img src="./images/cpl_photo5.jpg" alt="gridPhoto" class="cpl_photo">
+                            <img src="./images/cpl_photo6.jpg" alt="gridPhoto" class="cpl_photo">
+                            <img src="./images/cpl_photo7.jpg" alt="gridPhoto" class="cpl_photo">
+                            <img src="./images/cpl_photo8.jpg" alt="gridPhoto" class="cpl_photo">
+                        </div>
+
+                        <div class="rankTab">Corporal</div>
+                    </div>
+
+                    <section id="sergant" class="content hidden">
+                        <div id="outer_sgt_one">
+                            <div id="sgt_one" class="snapshot hidden"><!--kyungMin--></div> 
+                        </div>
+                        
+                        <div id="outer_sgt_two">
+                            <div id="sgt_two" class="snapshot hidden"><!--squad--></div> 
+                        </div>
+
+                        <div id="outer_sgt_three">
+                            <div id="sgt_three" class="snapshot hidden"><!--kyunWook--></div> 
+                        </div>
+
+                        <div id="outer_sgt_four">
+                            <div id="sgt_four" class="snapshot hidden"></div> <!--platoon-->
+                        </div>
+
+                        <p id="sgt_text">
+                            After I got promoted to Sergeant rank, I led the third squad until I was discharged from the service. The picture in the background is the picture of the platoon during the time, and I think it was taken during the last night of my service. Hover around the background and click the highlighted area to learn more about my comrades.
+                        </p>
+
+                        <div class="rankTab">Sergeant</div>
+
+                        <div id="sgt_overlay1" class="overlay hidden">
+                            <h2>Kyungmin Kim</h2>
+                            <div class="profile">
+                                <img src="./images/sgt_overlay1.jpg" alt="sgt_overlay1">
+                                <p>Kyungmin is the signalman of the platoon. When he joined the platoon, I looked after him a lot as he struggled to settle into the military lifestyle. Since then, he and I have been so close that people called our relationship "father-and-son" (myself as the father and KyungMin as the son). In addition, he and I shared the same hobby, which hardened our relationship even more.</p>
+                            </div>
+                            <button id="sgt_overlay1_btn">Close</button>
+                        </div>
+
+                        <div id="sgt_overlay2" class="overlay hidden">
+                            <h2>Third Squad</h2>
+                            <div class="profile">
+                                <img src="./images/sgt_overlay2.jpg" alt="sgt_overlay2">
+                                <p>The third squad consisted of three members including myself: ByungChan (middle) and HanKyu (right). ByungChan was the rifleman, and HanKyu was the machine gunner of the squad. The third squad was unique compared to the other squads because all members were certified medics. In addition, we shared similar hobbies, so the squad was packed with teamwork. They have been great members and leading the squad was an honor.</p>
+                            </div>
+                            <button id="sgt_overlay2_btn">Close</button>
+                        </div>
+
+                        <div id="sgt_overlay3" class="overlay hidden">
+                            <h2>Members of June</h2>
+                            <div class="profile">
+                                <img src="./images/sgt_overlay3.jpg" alt="sgt_overlay3">
+                                <p>The members in the picture joined the army and the company in the same month. Therefore, the relationship between us is very tight as we went through the service together since private rank. Despite not all members being in the same platoon, we stayed close enough to have our trip for the 1st-year celebration. I relied on them a lot when I was emotionally tired, and without them, I would not be able to complete the service.</p>
+                            </div>
+                            <button id="sgt_overlay3_btn">Close</button>
+                        </div>
+
+                        <div id="sgt_overlay4" class="overlay hidden">
+                            <h2>First Platoon</h2>
+                            <div class="profile">
+                                <img src="./images/sgt_overlay4.jpg" alt="sgt_overlay4">
+                                <p>The first platoon, my second home. Since private rank, the first platoon has been the greatest and the best in the company because we won many awards (11 in total, two from myself) and we held numerous teamwork training, resulting in flawless tactical performance. In addition, my experience has been so comfortable that I overcame my mental problems by consulting with my members. Overall, a great team that I will not forget.</p>
+                            </div>
+                            <button id="sgt_overlay4_btn">Close</button>
+                        </div>
+
+                        
+                    </section>
+
+                    <section id="closing" class="content hidden">
+                        <h2>Thank You For Your Service!</h2>
+                        <figure>
+                            <img src="./images/closing.png" alt="hello">
+                            <figcaption>Verified Civilian</figcaption>
+                        </figure>
+                        <h3>Officially Discharged.</h3>
+                    </section>
+
+                </div>
+
+                <button id="nextBtn"></button>
+
+            </div>
+        </main>
+    </div>
+    
+</body>
+</html>

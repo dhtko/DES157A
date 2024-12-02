@@ -1,0 +1,511 @@
+/*reset*/
+img{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*frames*/
+body{
+    background: rgb(78, 109, 84);
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+
+    max-width: 1200px;
+    max-height: 750px;
+
+    background: transparent;
+}
+header{
+    text-align: center;
+}
+
+#screen{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#display{
+    width: 1100px;
+    height: 620px;
+
+    border-style: inset;
+    border: 20px solid rgb(78, 16, 16);
+    border-radius: 15px;
+
+    position: relative;
+}
+.content{
+    width: 972px;
+    height: 620px;
+}
+
+#previousBtn{
+    margin: 0px 15px;
+
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 30px 52px 30px 0;
+    border-color: transparent rgb(168,168,168) transparent transparent;
+    transform: rotate(0deg);
+    background: transparent;
+
+    transition: all 0.25s ease;
+}
+#previousBtn:hover{
+    border-color: transparent rgb(171, 248, 255) transparent transparent;
+    transition: all 0.25s ease;
+}
+#nextBtn{
+    margin: 0px 15px;
+
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 30px 0 30px 52.0px;
+    border-color: transparent transparent transparent rgb(168,168,168);
+    transform: rotate(0deg);
+    background: transparent;
+
+    transition: all 0.25s ease;
+}
+#nextBtn:hover{
+    border-color: transparent transparent transparent rgb(171, 248, 255);
+    transition: all 0.25s ease;
+}
+
+.rankTab{
+    width: 180px;
+    text-align: center;
+    background-color: rgb(171, 248, 255);
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+
+
+/*toggle*/
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+
+    transition: all 0.2s ease;
+}
+.showing{
+    visibility: visible;
+    opacity: 1;
+
+    transition: all 0.2s ease;
+}
+
+
+/*image setting*/
+#closing img, #opening img{
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 15px solid rgb(239, 239, 239);
+    border-style: double;
+}
+#opening img{
+    width: 780px;
+}
+#closing img{
+    width: 400px;
+}
+.private_photo img{
+    width: 410px;
+    transition: all 1s ease;
+}
+.private_photo img:hover{
+    transform: scale(1.4);
+    box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.75);
+}
+#privateImage1{
+    height: 310px;
+}
+#slideshow img{
+    border: 20px solid rgb(62, 54, 54);
+    border-style: double;
+    border-radius: 13px;
+    width: 500px;
+
+    margin-bottom: 10px;
+}
+.profile img{
+    width: 430px;
+    border: 10px solid rgb(0, 0, 0);
+    border-style: double;
+}
+#closing img{
+    width: 350px;
+}
+
+
+/*content0: opening*/
+#opening{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: url('./images/cover.jpg');
+}
+figure{
+    padding: 0px;
+    margin: 0px;
+}
+
+/*content 1: private*/
+#private{
+    background: url('./images/notepad.jpg');
+    background-size: 60%;
+
+    display: flex;
+    flex-direction: row;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.private_photo{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 0px 20px;
+    align-items: center;
+}
+
+
+/*content 2: private 1st class*/
+#private1stClass{
+    background: url('./images/notepad.jpg');
+    background-size: 60%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#second_content{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    gap: 20px;
+}
+#slide_buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#slideshow button{
+    text-decoration: none;
+    
+    display: block;
+    width: 200px;
+
+    background: rgb(168, 168, 168);
+    text-align: center;
+    height: 50px;
+    line-height: 1.2em;
+
+    transition: all 1s ease;
+    border: solid 3px rgb(62,54,54);
+    border-radius: 10px;
+}
+#slideshow button:hover{
+    background: rgb(171, 248, 255);
+    transition: all 1s ease;
+}
+
+
+/*content 3: corporal*/
+#corporal{
+    background: url('./images/notepad.jpg');
+    background-size: 60%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#cpl_photoGrid{
+    margin: 5px 0px;
+    padding: 0px;
+
+    width: 100%;
+    height: 400px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px 10px;
+}
+.cpl_photo{
+    width: 200px;
+    height: 190px;
+
+    margin: 0px;
+    padding: 0px 16px;
+
+    opacity: 0;
+}
+
+/*content 4: sergant*/
+#sergant{
+    background-image: url('./images/sgt_background.jpg');
+    background-size: cover;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.snapshot{
+    background: rgba(0,0,0,0.5);
+    border: 5px solid white;
+}
+#outer_sgt_one{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+
+    width: 170px;
+    height: 210px;
+
+    background-color: transparent;
+}
+#sgt_one{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+
+    width: 170px;
+    height: 210px;
+}
+
+#outer_sgt_two{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+
+    width: 290px;
+    height: 430px;
+
+    background-color: transparent;
+}
+#sgt_two{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+
+    width: 290px;
+    height: 420px;
+}
+
+#outer_sgt_three{
+    position: absolute;
+    top: 0%;
+    left: 21%;
+
+    width: 290px;
+    height: 280px;
+
+    background-color: transparent;
+}
+#sgt_three{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+
+    width: 290px;
+    height: 280px;
+}
+
+#outer_sgt_four{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+
+    width: 310px;
+    height: 320px;
+
+    background-color: transparent;
+}
+#sgt_four{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+
+    width: 310px;
+    height: 320px;
+}
+
+.overlay{
+    background-color: rgba(223, 223, 223, 0.8);
+
+    width: 972px;
+    height: 620px;
+    
+    position: absolute;
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding: 0px 25px;
+}
+.overlay button{
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+
+    padding: 5px 20px;
+    border-radius: 4px;
+    border-style: none;
+    background-color: rgb(49, 49, 49);
+
+    transition: all 0.5s ease;
+}
+.overlay button:hover{
+    transform: scale(1.5);
+    transition: all 0.5s ease;
+    opacity: 0.75;
+}
+
+#sgt_text{
+    background-color: rgba(255, 255, 255, 0.7);
+
+    width: 380px;
+    margin: 0px;
+    padding: 10px;
+
+    position: absolute;
+    bottom: 5.6%;
+    right: 0%;
+}
+
+/*content 5: ending*/
+#closing{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: url('./images/cover.jpg');
+}
+
+
+/*font*/
+header h1{
+    margin: 0px;
+    padding: 20px 0px 10px 0px;
+    
+    font-family: "Hammersmith One";
+    font-size: 60px;
+    color: rgb(41, 231, 75);
+}
+.rankTab{
+    padding: 5px 0px;
+    
+    font-family: "Palanquin Dark";
+    font-size: 20px;
+}
+#closing, #opening{
+    text-align: center;
+}
+#opening h2, #closing h2{
+    font-family: "Alata";
+    font-size: 45px;
+    color: rgb(78, 231, 255);
+
+    margin: 0px;
+    padding: 30px;
+}
+#opening h3, #closing h3{
+    font-family: "Kumbh Sans";
+    font-size: 25px;
+    color: rgb(29, 180, 255);
+}
+
+.private_photo h2{
+    margin: 0px;
+    padding: 15px 0px;
+
+    font-family: 'Shanti';
+    font-size: 35px;
+}
+.private_photo p{
+    font-family: "Ysabeau Office";
+    font-size: 16px;
+}
+
+#second_content p{
+    margin: 0px;
+    padding: 0px;
+
+    font-family: "Ysabeau Office";
+    font-size: 20px;
+    line-height: 1.3em;
+}
+
+#corporal p{
+    margin: 0px;
+    padding: 15px;
+
+    font-family: "Ysabeau Office";
+    font-size: 18px;
+    line-height: 1.2em;
+}
+
+.overlay h2{
+    text-align: center;
+
+    margin: 0px;
+    padding: 20px 0px;
+    
+    font-family: 'Shanti';
+    font-size: 45px;
+}
+.profile p{
+    padding: 0px;
+    margin: 0px;
+    
+    font-family: "Ysabeau Office";
+    font-size: 20px;
+}
+#sgt_text{
+    font-family: "Ysabeau Office";
+    font-size: 16px;
+    line-height: 1.3em;
+}
+
+.overlay button{
+    font-family: "Roboto";
+    font-size: 18px;
+    color: white;
+}
+#slideshow button{
+    font-family: "Roboto";
+    font-size: 18px;
+    color: black;
+}
+
+figcaption{
+    font-family: "Roboto";
+    font-size: 18px;
+    line-height: 1.8em;
+    color: rgb(239, 239, 239);
+}
