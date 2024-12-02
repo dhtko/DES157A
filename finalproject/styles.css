@@ -80,18 +80,6 @@ header{
     transition: all 0.25s ease;
 }
 
-.rankTab{
-    width: 180px;
-    text-align: center;
-    background-color: rgb(171, 248, 255);
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-}
-
 
 /*toggle*/
 .hidden{
@@ -393,7 +381,7 @@ figure{
     padding: 10px;
 
     position: absolute;
-    bottom: 5.6%;
+    bottom: 0%;
     right: 0%;
 }
 
@@ -418,10 +406,11 @@ header h1{
     color: rgb(41, 231, 75);
 }
 .rankTab{
-    padding: 5px 0px;
-    
+    padding: 0px;
+    margin: 10px 0px;
+
     font-family: "Palanquin Dark";
-    font-size: 20px;
+    font-size: 32px;
 }
 #closing, #opening{
     text-align: center;
@@ -440,13 +429,6 @@ header h1{
     color: rgb(29, 180, 255);
 }
 
-.private_photo h2{
-    margin: 0px;
-    padding: 15px 0px;
-
-    font-family: 'Shanti';
-    font-size: 35px;
-}
 .private_photo p{
     font-family: "Ysabeau Office";
     font-size: 16px;
@@ -461,13 +443,18 @@ header h1{
     line-height: 1.3em;
 }
 
+#corporal h2{
+    margin: 10px 0px 5px 15px;
+    padding: 0px;
+    font-size: 42px;
+}
 #corporal p{
     margin: 0px;
-    padding: 15px;
+    padding: 3px 15px;
 
     font-family: "Ysabeau Office";
     font-size: 18px;
-    line-height: 1.2em;
+    line-height: 1.3em;
 }
 
 .overlay h2{
@@ -486,7 +473,14 @@ header h1{
     font-family: "Ysabeau Office";
     font-size: 20px;
 }
-#sgt_text{
+#sgt_text h2{
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
+}
+#sgt_text p{
+    margin: 0px;
+    padding: 0px;
+    
     font-family: "Ysabeau Office";
     font-size: 16px;
     line-height: 1.3em;
