@@ -20,10 +20,17 @@
 <body>
     <div id="container"> <!--Centering the project-->
 
+        <header>
+            <h1>Dong Hoon (Tony) Ko</h1> <!--Initially, the title was in here, but I moved it to opening chapter since title can distract the expereince. However, header is critical component of a website, so I placed my name in there.-->
+        </header>
+
         <main>
             <div id="screen">
 
-                <button id="previousBtn"></button>    
+                <div class="arrowButton">
+                    <p class="navigationHover hidden" id="previousInstruction">Click the button to go back to previous chapter</p>
+                    <button id="previousBtn"></button>    
+                </div>
                 
                 <div id="display">
                 
@@ -40,7 +47,7 @@
                         <section class="private_photo">
                             <h2 class="rankTab">Beginning / Trainee</h2>
                             <img src="images/private_1.png" alt="private image" id="privateImage1">
-                            <p>In South Korea, military service is mandatory, and every man (starting at age 18 or above) must be enlisted. I enlisted in the army in June 2021 and completed my service in December 2022 (18 months total). The picture was taken on the morning of the day of joining the army (if I am correct). Notice how my hair is short due to requirements that trainees should have before being enlisted. After I enlisted, I went through a trainee session (1 month), and it was fast; there were numerous exercises and simulations that I could not remember all. The session was tough, but it was an important step to becoming a soldier who can protect my country.</p>
+                            <p>In South Korea, military service is mandatory, and every man (starting at age 18 or above) must be enlisted. I enlisted in the army in June 2021 and completed my service in December 2022. The picture was taken on the morning of the day of joining the army. Notice how my hair is short due to requirements that trainees should have before being enlisted. After I enlisted, I went through a trainee session, and it was fast; there were numerous exercises and simulations that I could not remember all. The session was tough, but it was an important step to becoming a soldier who can protect my country.</p>
                         </section>
                         <section class="private_photo">
                             <h2 class="rankTab">Private: Welcome Party</h2>
@@ -163,10 +170,14 @@
 
                 </div>
 
-                <button id="nextBtn"></button>
-
+                <div class="arrowButton">
+                    <p class="navigationHover hidden" id="nextInstruction">Click the button to go to the <br>next chapter</p>
+                    <button id="nextBtn"></button>
+                </div>
             </div>
         </main>
+
+
     </div>
     
 </body>

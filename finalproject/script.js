@@ -3,7 +3,9 @@
     console.log('reading js');
 
     const nextBtn = document.querySelector('#nextBtn');
+    const nextBtnInstruction = document.querySelector('#nextInstruction');
     const prevBtn = document.querySelector('#previousBtn');
+    const prevBtnInstruction = document.querySelector('#previousInstruction');
 
     const opening = document.querySelector('#opening');
 
@@ -58,6 +60,18 @@
         else if (counter == 4){
             content_four();
         }
+    });
+    nextBtn.addEventListener('mouseover', function(){
+        nextBtnInstruction.className = 'navigationHover showing';
+    });
+    nextBtn.addEventListener('mouseout', function(){
+        nextBtnInstruction.className = 'navigationHover hidden';
+    });
+    prevBtn.addEventListener('mouseover', function(){
+        prevBtnInstruction.className = 'navigationHover showing';
+    });
+    prevBtn.addEventListener('mouseout', function(){
+        prevBtnInstruction.className = 'navigationHover hidden';
     });
     prevBtn.addEventListener('click', function(){
         counter--;
