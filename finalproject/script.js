@@ -44,6 +44,7 @@
     let counter = 0;
 
     nextBtn.addEventListener('click', function(){
+        
         counter++;
         if (counter > 5){
             counter = 5;
@@ -237,9 +238,13 @@
         });
         outer_sgt_one.addEventListener('click', function(){
             sgt_over_one.className = 'overlay showing';
+            prevBtn.disabled = true;
+            nextBtn.disabled = true;
         });
         sgt_btn_one.addEventListener('click', function(){
             sgt_over_one.className = 'overlay hidden';
+            prevBtn.disabled = false;
+            nextBtn.disabled = false;
         });
 
         outer_sgt_two.addEventListener('mouseover', function(){
@@ -250,9 +255,13 @@
         });
         outer_sgt_two.addEventListener('click', function(){
             sgt_over_two.className = 'overlay showing';
+            prevBtn.disabled = true;
+            nextBtn.disabled = true;
         });
         sgt_btn_two.addEventListener('click', function(){
             sgt_over_two.className = 'overlay hidden';
+            prevBtn.disabled = false;
+            nextBtn.disabled = false;
         });
 
         outer_sgt_three.addEventListener('mouseover', function(){
@@ -263,9 +272,13 @@
         });
         outer_sgt_three.addEventListener('click', function(){
             sgt_over_three.className = 'overlay showing';
+            prevBtn.disabled = true;
+            nextBtn.disabled = true;
         });
         sgt_btn_three.addEventListener('click', function(){
             sgt_over_three.className = 'overlay hidden';
+            prevBtn.disabled = false;
+            nextBtn.disabled = false;
         });
 
         outer_sgt_four.addEventListener('mouseover', function(){
@@ -276,9 +289,13 @@
         });
         outer_sgt_four.addEventListener('click', function(){
             sgt_over_four.className = 'overlay showing';
+            prevBtn.disabled = true;
+            nextBtn.disabled = true;
         });
         sgt_btn_four.addEventListener('click', function(){
             sgt_over_four.className = 'overlay hidden';
+            prevBtn.disabled = false;
+            nextBtn.disabled = false;
         });
     }
 
