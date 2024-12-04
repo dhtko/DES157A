@@ -22,6 +22,7 @@
     const corporal = document.querySelector('#corporal');
     const cpl_photoGrid = document.querySelector('#cpl_photoGrid');
     const cpl_photos = document.querySelectorAll('.cpl_photo');
+    const cpl_text = document.querySelector('#corporalText');
 
     const sergant = document.querySelector('#sergant');
     const outer_sgt_one = document.querySelector('#outer_sgt_one');
@@ -237,26 +238,69 @@
             const firstStart = firstEnd - photoWidth;
 
             let photoOpacity = 0;
-
             if (xPos > firstStart && xPos < firstEnd){
                 photoOpacity = opacityCalculate(xPos, firstStart, firstEnd);
                 cpl_photos[0].style.opacity = photoOpacity;
                 cpl_photos[4].style.opacity = photoOpacity;
+
+                cpl_photos[0].addEventListener('click', function(){
+                    cpl_photos[0].style.transform = 'scale(1.4)';
+                    cpl_photos[0].style.zIndex = '1';
+                    cpl_photos[0].style.opacity = 1;
+                });
+                cpl_photos[4].addEventListener('click', function(){
+                    cpl_photos[4].style.transform = 'scale(1.4)';
+                    cpl_photos[4].style.zIndex = '1';
+                    cpl_photos[4].style.opacity = 1;
+                });                 
             }
             else if (xPos > secondStart && xPos < secondEnd){
                 photoOpacity = opacityCalculate(xPos, secondStart, secondEnd);
                 cpl_photos[1].style.opacity = photoOpacity;
                 cpl_photos[5].style.opacity = photoOpacity;
+
+                cpl_photos[1].addEventListener('click', function(){
+                    cpl_photos[1].style.transform = 'scale(1.4)';
+                    cpl_photos[1].style.zIndex = '1';
+                    cpl_photos[1].style.opacity = 1;
+                });
+                cpl_photos[5].addEventListener('click', function(){
+                    cpl_photos[5].style.transform = 'scale(1.4)';
+                    cpl_photos[5].style.zIndex = '1';
+                    cpl_photos[5].style.opacity = 1;
+                }); 
             }
             else if (xPos > thirdStart && xPos < thirdEnd){
                 photoOpacity = opacityCalculate(xPos, thirdStart, thirdEnd);
                 cpl_photos[2].style.opacity = photoOpacity;
                 cpl_photos[6].style.opacity = photoOpacity;
+
+                cpl_photos[2].addEventListener('click', function(){
+                    cpl_photos[2].style.transform = 'scale(1.4)';
+                    cpl_photos[2].style.zIndex = '1';
+                    cpl_photos[2].style.opacity = 1;
+                });
+                cpl_photos[6].addEventListener('click', function(){
+                    cpl_photos[6].style.transform = 'scale(1.4)';
+                    cpl_photos[6].style.zIndex = '1';
+                    cpl_photos[6].style.opacity = 1;
+                }); 
             }
             else if (xPos > fourthStart && xPos < fourthEnd){
                 photoOpacity = opacityCalculate(xPos, fourthStart, fourthEnd);
                 cpl_photos[3].style.opacity = photoOpacity;
                 cpl_photos[7].style.opacity = photoOpacity;
+
+                cpl_photos[3].addEventListener('click', function(){
+                    cpl_photos[3].style.transform = 'scale(1.4)';
+                    cpl_photos[3].style.zIndex = '1';
+                    cpl_photos[3].style.opacity = 1;
+                });
+                cpl_photos[7].addEventListener('click', function(){
+                    cpl_photos[7].style.transform = 'scale(1.4)';
+                    cpl_photos[7].style.zIndex = '1';
+                    cpl_photos[7].style.opacity = 1;
+                }); 
             }
             else{
                 for (const eachPhoto of cpl_photos){
@@ -269,6 +313,20 @@
             for (const eachPhoto of cpl_photos){
                 eachPhoto.style.opacity = 0;
             }
+        });
+
+        document.addEventListener('keydown', function(event){
+            if (event.keyCode === 27){
+                cpl_photos[0].style.transform = 'scale(1.0)';
+                cpl_photos[1].style.transform = 'scale(1.0)';
+                cpl_photos[2].style.transform = 'scale(1.0)';
+                cpl_photos[3].style.transform = 'scale(1.0)';
+                cpl_photos[4].style.transform = 'scale(1.0)';
+                cpl_photos[5].style.transform = 'scale(1.0)';
+                cpl_photos[6].style.transform = 'scale(1.0)';
+                cpl_photos[7].style.transform = 'scale(1.0)';
+            } 
+            event.preventDefault();
         });
     }
     function opacityCalculate(pos, start, end){
