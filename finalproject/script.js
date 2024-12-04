@@ -98,6 +98,10 @@
         switch(object){
             case 1: 
                 opening.className = 'content hidden';
+                //show and enable the left arrow button
+                prevBtn.disabled = false;
+                prevBtn.className = 'arrowButton showing';
+                //show and enable the left arrow button
                 lowestRank.className = 'content showing';
                 privatE.className = 'content hidden';
                 corporal.className = 'content hidden';
@@ -127,6 +131,10 @@
                 corporal.className = 'content hidden';
                 sergant.className = 'content showing';
                 closing.className = 'content hidden';
+                //right arrow button showing and enabled
+                nextBtn.disabled = false;
+                nextBtn.className = 'arrowButton showing'
+                //right arrow button showing and enabled
                 break;
             case 5: 
                 opening.className = 'content hidden';
@@ -135,9 +143,17 @@
                 corporal.className = 'content hidden';
                 sergant.className = 'content hidden';
                 closing.className = 'content showing';
+                //right arrow button hidden and disabled
+                nextBtn.disabled = true;
+                nextBtn.className = 'arrowButton hidden';
+                //right arrow button hidden and disabled
                 break;
             default: 
                 opening.className = 'content showing';
+                //left arrow button hidden and disabled
+                prevBtn.disabled = true;
+                prevBtn.className = 'arrowButton hidden'
+                //left arrow button hidden and disabled
                 lowestRank.className = 'content hidden';
                 privatE.className = 'content hidden';
                 corporal.className = 'content hidden';

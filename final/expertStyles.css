@@ -35,7 +35,12 @@ article{
 ul, ol{
     margin: 0px;
 }
-
+img{
+    display: block;
+    margin: 30px auto 5px auto;
+    width: 500px;
+    align-self: center;
+}
 
 /*fonts*/
 header h1{
