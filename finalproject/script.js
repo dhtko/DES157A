@@ -16,6 +16,8 @@
     const slidePrevious = document.querySelector('#slidePrevious');
     const slideImages = ['slideshow_1.jpg', 'slideshow_2.jpg', 'slideshow_3.jpg', 'slideshow_4.jpg', 'slideshow_5.jpg'];
     const slide = document.querySelector('#slideImage');
+    const slideText = document.querySelector('#slideText');
+    const slideTextBox = document.querySelector('#slideTextBox');
 
     const corporal = document.querySelector('#corporal');
     const cpl_photoGrid = document.querySelector('#cpl_photoGrid');
@@ -173,8 +175,20 @@
             if (slideChecker > slideImages.length - 1){
                 slideChecker = 0;
             }
-
             slide.src = `images/${slideImages[slideChecker]}`;
+
+            switch(slideChecker){
+                case 1: slideText.innerHTML = 'testing text for section 1';
+                        slideTextBox.style.top = '63.2%'; break;
+                case 2: slideText.innerHTML = 'testing text for section 2';
+                        slideTextBox.style.top = '63.2%'; break;
+                case 3: slideText.innerHTML = 'testing text for section 3'; 
+                        slideTextBox.style.top = '56.4%'; break;
+                case 4: slideText.innerHTML = 'testing text for section 4'; 
+                        slideTextBox.style.top = '56.4%'; break;
+                default: slideText.innerHTML = 'testing text for sectiion 0';
+                        slideTextBox.style.top = '63.2%'; break;
+            }
         });
 
         slidePrevious.addEventListener('click', function(){
@@ -183,6 +197,26 @@
                 slideChecker = slideImages.length-1;
             }
             slide.src = `images/${slideImages[slideChecker]}`;
+
+            switch(slideChecker){
+                case 1: slideText.innerHTML = 'testing text for section 1';
+                        slideTextBox.style.top = '63.2%'; break;
+                case 2: slideText.innerHTML = 'testing text for section 2';
+                        slideTextBox.style.top = '63.2%'; break;
+                case 3: slideText.innerHTML = 'testing text for section 3'; 
+                        slideTextBox.style.top = '56.4%'; break;
+                case 4: slideText.innerHTML = 'testing text for section 4'; 
+                        slideTextBox.style.top = '56.4%'; break;
+                default: slideText.innerHTML = 'testing text for sectiion 0';
+                        slideTextBox.style.top = '63.2%'; break;
+            }
+        });
+
+        slide.addEventListener('mouseover', function(){
+            slideTextBox.className = 'showing';
+        });
+        slide.addEventListener('mouseout', function(){
+            slideTextBox.className = 'hidden';
         });
     }
 
