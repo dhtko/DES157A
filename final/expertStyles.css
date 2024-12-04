@@ -1,0 +1,68 @@
+body{
+    background-color: #ffefcd;
+}
+main{
+    max-width: 1200px;
+    min-height: 400px; /*fits 750px height restriction, but allowing vertical scroll as content continues to add on*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+
+    background-color: transparent
+}
+header h1{
+    text-align: center;
+    padding: 0px;
+    margin: 20px auto;
+}
+section{
+    display: block;
+    width: 900px;
+
+    border-radius: 20px;
+    background-color: #fdf8ed;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+
+    margin: 30px auto;
+    padding: 20px;
+}
+article{
+    padding: 0px;
+    margin: 30px 0px;
+}
+ul, ol{
+    margin: 0px;
+}
+
+
+/*fonts*/
+header h1{
+    font-family: 'Abril Fatface';
+    font-size: 45px;
+}
+h2{
+    font-family: 'Libre Baskerville';
+    font-weight: 700;
+    font-size: 45px;
+
+    padding: 0px;
+    margin: 15px 0px;
+}
+h3{
+    font-family: 'Cardo';
+    font-size: 23px;
+    line-height: 1.5em;
+
+    padding: 0px;
+    margin: 15px 0px 5px 0px;
+}
+p, li{
+    font-family: 'Cormorant Infant';
+    font-size: 17px;
+    line-height: 1.5em;
+
+    padding: 0px;
+    margin: 0px;
+}
