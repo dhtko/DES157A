@@ -27,9 +27,9 @@
         <main>
             <div id="screen">
 
-                <div class="arrowButton showing">
+                <div class="arrowButton">
                     <p class="navigationHover hidden" id="previousInstruction">Click the button to go back to previous chapter</p>
-                    <button id="previousBtn"></button>    
+                    <button id="previousBtn" class="arrowButton hidden" ></button>    
                 </div>
                 
                 <div id="display">
@@ -131,7 +131,11 @@
                         <div id="sgt_overlay1" class="overlay hidden">
                             <h2>Kyungmin Kim</h2>
                             <div class="profile">
-                                <img src="./images/sgt_overlay1.jpg" alt="sgt_overlay1">
+                                <img src="./images/sgt_overlay1.jpg" alt="sgt_overlay1" usemap="#heepeeMap">
+                                <map name="heepeeMap">
+                                    <area id="heepee" shape="circle" coords="117,140,108" href="#" alt="heepeeFace">
+                                </map>
+                                <div id="heepeeID"></div>
                                 <p>Kyungmin is the signalman of the platoon. When he joined the platoon, I looked after him a lot as he struggled to settle into the military lifestyle. Since then, he and I have been so close that people called our relationship "father-and-son" (myself as the father and KyungMin as the son). In addition, he and I shared the same hobby, which hardened our relationship even more.</p>
                             </div>
                             <button id="sgt_overlay1_btn">Close</button>
@@ -140,7 +144,12 @@
                         <div id="sgt_overlay2" class="overlay hidden">
                             <h2>Third Squad</h2>
                             <div class="profile">
-                                <img src="./images/sgt_overlay2.jpg" alt="sgt_overlay2">
+                                <img src="./images/sgt_overlay2.jpg" alt="sgt_overlay2" usemap="#squadMap">
+                                <map name="squadMap">
+                                    <area id="byungChanFace" shape="circle" coords="230,112,54" href="#" alt="byungChanFace">
+                                    <area id="manKyuFace" shape="circle" coords="323,128,41" href="#" alt="manKyuFace">
+                                    <area>
+                                </map>
                                 <p>The third squad consisted of three members including myself: ByungChan (middle) and HanKyu (right). ByungChan was the rifleman, and HanKyu was the machine gunner of the squad. The third squad was unique compared to the other squads because all members were certified medics. In addition, we shared similar hobbies, so the squad was packed with teamwork. They have been great members and leading the squad was an honor.</p>
                             </div>
                             <button id="sgt_overlay2_btn">Close</button>
@@ -149,7 +158,13 @@
                         <div id="sgt_overlay3" class="overlay hidden">
                             <h2>Members of June</h2>
                             <div class="profile">
-                                <img src="./images/sgt_overlay3.jpg" alt="sgt_overlay3">
+                                <img src="./images/sgt_overlay3.jpg" alt="sgt_overlay3" usemap="#juneMap">
+                                <map name="juneMap">
+                                    <area id="gunWuk" shape="circle" coords="259,86,30" alt="gunWuk">
+                                    <area id="junSang" shape="circle" coords="197,152,31" alt="junSang">
+                                    <area id="jinWoo" shape="circle" coords="289,143,30" alt="gunWuk">
+                                    <area id="haeMin" shape="circle" coords="138,63,29" alt="gunWuk">
+                                </map>
                                 <p>The members in the picture joined the army and the company in the same month. Therefore, the relationship between us is very tight as we went through the service together since private rank. Despite not all members being in the same platoon, we stayed close enough to have our trip for the 1st-year celebration. I relied on them a lot when I was emotionally tired, and without them, I would not be able to complete the service.</p>
                             </div>
                             <button id="sgt_overlay3_btn">Close</button>
@@ -158,7 +173,19 @@
                         <div id="sgt_overlay4" class="overlay hidden">
                             <h2>First Platoon</h2>
                             <div class="profile">
-                                <img src="./images/sgt_overlay4.jpg" alt="sgt_overlay4">
+                                <img src="./images/sgt_overlay4.jpg" alt="sgt_overlay4" usemap="#platoonMap">
+                                <map name="platoonMap">
+                                    <area id="kyungMin2" shape="circle" coords="90,103,37" alt="kyungMin2">
+                                    <area id="minSeo" shape="circle" coords="137,45,32" alt="minSeo">
+                                    <area id="manKyu2" shape="circle" coords="188,39,28" alt="manKyu2">
+                                    <area id="ikJun" shape="circle" coords="229,50,27" alt="ikJun">
+                                    <area id="byungChan2" shape="circle" coords="271,61,34" alt="byungChan2">
+                                    <area id="minHyuk" shape="circle" coords="356,81,37" alt="minHyuk">
+                                    <area id="eunHyung" shape="circle" coords="281,159,33" alt="eunHyung">
+                                    <area id="gunWuk2" shape="circle" coords="193,103,32" alt="gunWuk2">
+                                    <area id="namEun" shape="circle" coords="138,159,31" alt="namEun">
+
+                                </map>
                                 <p>The first platoon, my second home. Since private rank, the first platoon has been the greatest and the best in the company because we won many awards (11 in total, two from myself) and we held numerous teamwork training, resulting in flawless tactical performance. In addition, my experience has been so comfortable that I overcame my mental problems by consulting with my members. Overall, a great team that I will not forget.</p>
                             </div>
                             <button id="sgt_overlay4_btn">Close</button>
@@ -181,7 +208,7 @@
 
                 </div>
 
-                <div class="arrowButton showing">
+                <div class="arrowButton">
                     <p class="navigationHover hidden" id="nextInstruction">Click the button to go to the <br>next chapter</p>
                     <button id="nextBtn"></button>
                 </div>

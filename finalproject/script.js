@@ -22,7 +22,6 @@
     const corporal = document.querySelector('#corporal');
     const cpl_photoGrid = document.querySelector('#cpl_photoGrid');
     const cpl_photos = document.querySelectorAll('.cpl_photo');
-    const cpl_text = document.querySelector('#corporalText');
 
     const sergant = document.querySelector('#sergant');
     const outer_sgt_one = document.querySelector('#outer_sgt_one');
@@ -41,6 +40,23 @@
     const sgt_btn_two = document.querySelector('#sgt_overlay2_btn');
     const sgt_btn_three = document.querySelector('#sgt_overlay3_btn');
     const sgt_btn_four = document.querySelector('#sgt_overlay4_btn');
+    //image maps
+    const heepee = document.querySelector('#heepee'); //overlay1
+    const byungChan = document.querySelector('#byungChanFace'); //overlay2
+    const manKyu = document.querySelector('#manKyuFace');
+    const gunWuk = document.querySelector('#gunWuk'); //overlay3
+    const junSang = document.querySelector('#junSang');
+    const jinWoo = document.querySelector('#jinWoo');
+    const haeMin = document.querySelector('#haeMin');
+    const kyungMin2 = document.querySelector('#kyungMin2'); //overlay 4
+    const minSeo = document.querySelector('#minSeo');
+    const manKyu2 = document.querySelector('#manKyu2');
+    const ikJun = document.querySelector('#ikJun');
+    const byungChan2 = document.querySelector('#byungChan2');
+    const minHyuk = document.querySelector('#minHyuk');
+    const eunHyung = document.querySelector('#eunHyung');
+    const gunWuk2 = document.querySelector('#gunWuk2');
+    const namEun = document.querySelector('#namEun');
     
     const closing = document.querySelector('#closing');
 
@@ -346,13 +362,24 @@
         });
         outer_sgt_one.addEventListener('click', function(){
             sgt_over_one.className = 'overlay showing';
+            
             prevBtn.disabled = true;
+            prevBtnInstruction.innerHTML = '<p>Disabled</p>';
             nextBtn.disabled = true;
+            nextBtnInstruction.innerHTML = '<p>Disabled</p>';
         });
+        //test
+        heepee.addEventListener('click', function(){
+            console.log('heepee');
+        });
+        //test
         sgt_btn_one.addEventListener('click', function(){
             sgt_over_one.className = 'overlay hidden';
+            
             prevBtn.disabled = false;
+            prevBtnInstruction.innerHTML = '<p>Click the button to go back to previous chapter</p>';
             nextBtn.disabled = false;
+            nextBtnInstruction.innerHTML = '<p>Click the button to go back to previous chapter</p>';
         });
 
         outer_sgt_two.addEventListener('mouseover', function(){
@@ -363,13 +390,27 @@
         });
         outer_sgt_two.addEventListener('click', function(){
             sgt_over_two.className = 'overlay showing';
+            
             prevBtn.disabled = true;
+            prevBtnInstruction.innerHTML = '<p>Disabled</p>';
             nextBtn.disabled = true;
+            nextBtnInstruction.innerHTML = '<p>Disabled</p>';
         });
+        //test
+        byungChan.addEventListener('click', function(){
+            console.log('byungchan');
+        });
+        manKyu.addEventListener('click', function(){
+            console.log('mankyu');
+        });
+        //test
         sgt_btn_two.addEventListener('click', function(){
             sgt_over_two.className = 'overlay hidden';
+            
             prevBtn.disabled = false;
+            prevBtnInstruction.innerHTML = '<p>Click the button to go back to previous chapter</p>';
             nextBtn.disabled = false;
+            nextBtnInstruction.innerHTML = '<p>Click the button to go back to previous chapter</p>';
         });
 
         outer_sgt_three.addEventListener('mouseover', function(){
@@ -380,13 +421,33 @@
         });
         outer_sgt_three.addEventListener('click', function(){
             sgt_over_three.className = 'overlay showing';
+            
             prevBtn.disabled = true;
+            prevBtnInstruction.innerHTML = '<p>Disabled</p>';
             nextBtn.disabled = true;
+            nextBtnInstruction.innerHTML = '<p>Disabled</p>';
         });
+        //test
+        gunWuk.addEventListener('click', function(){
+            console.log('gunwuk');
+        });
+        junSang.addEventListener('click', function(){
+            console.log('junsang');
+        });
+        jinWoo.addEventListener('click', function(){
+            console.log('jinwoo');
+        });
+        haeMin.addEventListener('click', function(){
+            console.log('haemin');
+        });
+        //test
         sgt_btn_three.addEventListener('click', function(){
             sgt_over_three.className = 'overlay hidden';
+            
             prevBtn.disabled = false;
+            prevBtnInstruction.innerHTML = '<p>Click the button to go back to previous chapter</p>';
             nextBtn.disabled = false;
+            nextBtnInstruction.innerHTML = '<p>Click the button to go back to previous chapter</p>';
         });
 
         outer_sgt_four.addEventListener('mouseover', function(){
@@ -397,15 +458,51 @@
         });
         outer_sgt_four.addEventListener('click', function(){
             sgt_over_four.className = 'overlay showing';
+            
             prevBtn.disabled = true;
+            prevBtnInstruction.innerHTML = '<p>Disabled</p>';
             nextBtn.disabled = true;
+            nextBtnInstruction.innerHTML = '<p>Disabled</p>';
         });
+        //test
+        kyungMin2.addEventListener('click', function(){
+            console.log('kyungMin2');
+        });
+        minSeo.addEventListener('click', function(){
+            console.log('minseo');
+        });
+        manKyu2.addEventListener('click', function(){
+            console.log('mankyu2');
+        });
+        ikJun.addEventListener('click', function(){
+            console.log('ikjun');
+        });
+        byungChan2.addEventListener('click', function(){
+            console.log('byungchan2');
+        });
+        minHyuk.addEventListener('click', function(){
+            console.log('minHyuk');
+        });
+        eunHyung.addEventListener('click', function(){
+            console.log('eunHyung');
+        });
+        gunWuk2.addEventListener('click', function(){
+            console.log('gunwuk2');
+        });
+        namEun.addEventListener('click', function(){
+            console.log('namEun');
+        });
+        //test
         sgt_btn_four.addEventListener('click', function(){
             sgt_over_four.className = 'overlay hidden';
+            
             prevBtn.disabled = false;
+            prevBtnInstruction.innerHTML = '<p>Click the button to go back to previous chapter</p>';
             nextBtn.disabled = false;
+            nextBtnInstruction.innerHTML = '<p>Click the button to go back to previous chapter</p>';
         });
     }
+
 
 
 })();

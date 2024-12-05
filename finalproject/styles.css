@@ -332,6 +332,16 @@ figure{
     width: 170px;
     height: 210px;
 }
+#heepeeID{
+    position: absolute;
+    top: 18%;
+    left: 23%;
+
+    width: 100px;
+    height: 50px;
+
+    background-color: orange;
+}
 
 #outer_sgt_two{
     position: absolute;
