@@ -647,7 +647,7 @@ header h1{
 #closing, #opening{
     text-align: center;
 }
-#opening h1, #closing h2{
+#opening h2, #closing h2{
     font-family: "Hammersmith One";
     font-size: 45px;
     color: rgb(78, 231, 255);
