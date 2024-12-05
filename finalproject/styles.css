@@ -255,11 +255,10 @@ figure{
 }
 #slideTextBox{
     position: absolute;
-    top: 63.2%; /*deafult: 63.2% ; 3,4: 56.4%*/
+    top: 64.5%; /*deafult: 63.2% ; 3,4: 56.4%*/
     left: 4.2%;
     
     width: 500px;
-    height: 65px;
     background-color: rgba(0,0,0,0.5);
     color: white;
 

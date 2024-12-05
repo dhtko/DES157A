@@ -234,16 +234,16 @@
             slide.src = `images/${slideImages[slideChecker]}`;
 
             switch(slideChecker){
-                case 1: slideText.innerHTML = 'testing text for section 1';
-                        slideTextBox.style.top = '63.2%'; break;
-                case 2: slideText.innerHTML = 'testing text for section 2';
-                        slideTextBox.style.top = '63.2%'; break;
-                case 3: slideText.innerHTML = 'testing text for section 3'; 
-                        slideTextBox.style.top = '56.4%'; break;
-                case 4: slideText.innerHTML = 'testing text for section 4'; 
-                        slideTextBox.style.top = '56.4%'; break;
-                default: slideText.innerHTML = 'testing text for sectiion 0';
-                        slideTextBox.style.top = '63.2%'; break;
+                case 1: slideText.innerHTML = '<p>Having a barbeque time with beer! The drink was the 1st prize for the field day with different companies (within the same battalion).</p>';
+                        slideTextBox.style.top = '59%'; break;
+                case 2: slideText.innerHTML = '<p>The photo was taken during another field day with all companies within the brigade. This was remarkable because it was the biggest event I experienced during my service.</p>';
+                        slideTextBox.style.top = '59%'; break;
+                case 3: slideText.innerHTML = '<p>The photo was taken during the field day, competing against the companies within the same battalion. The man who got the spotlight was the MVP of the day.</p>'; 
+                        slideTextBox.style.top = '52.4%'; break;
+                case 4: slideText.innerHTML = '<p>The photo was taken during having the mafia game. 1st platoon has a tradition of playing mafia games during Halloween night.</p>'; 
+                        slideTextBox.style.top = '56.2%'; break;
+                default: slideText.innerHTML = '<p>Having a barbeque time during the winter season membership training with platoon members.</p>';
+                        slideTextBox.style.top = '62.8%'; break;
             }
         });
 
@@ -255,16 +255,16 @@
             slide.src = `images/${slideImages[slideChecker]}`;
 
             switch(slideChecker){
-                case 1: slideText.innerHTML = 'testing text for section 1';
-                        slideTextBox.style.top = '63.2%'; break;
-                case 2: slideText.innerHTML = 'testing text for section 2';
-                        slideTextBox.style.top = '63.2%'; break;
-                case 3: slideText.innerHTML = 'testing text for section 3'; 
-                        slideTextBox.style.top = '56.4%'; break;
-                case 4: slideText.innerHTML = 'testing text for section 4'; 
-                        slideTextBox.style.top = '56.4%'; break;
-                default: slideText.innerHTML = 'testing text for sectiion 0';
-                        slideTextBox.style.top = '63.2%'; break;
+                case 1: slideText.innerHTML = '<p>Having a barbeque time with beer! The drink was the 1st prize for the field day with different companies (within the same battalion).</p>';
+                        slideTextBox.style.top = '59%'; break;
+                case 2: slideText.innerHTML = '<p>The photo was taken during another field day with all companies within the brigade. This was remarkable because it was the biggest event I experienced during my service.</p>';
+                        slideTextBox.style.top = '59%'; break;
+                case 3: slideText.innerHTML = '<p>The photo was taken during the field day, competing against the companies within the same battalion. The man who got the spotlight was the MVP of the day.</p>'; 
+                        slideTextBox.style.top = '52.4%'; break;
+                case 4: slideText.innerHTML = '<p>The photo was taken during having the mafia game. 1st platoon has a tradition of playing mafia games during Halloween night.</p>'; 
+                        slideTextBox.style.top = '56.2%'; break;
+                default: slideText.innerHTML = '<p>Having a barbeque time during the winter season membership training with platoon members.</p>';
+                        slideTextBox.style.top = '62.8%'; break;
             }
         });
 
