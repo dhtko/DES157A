@@ -2,6 +2,8 @@
     'use strict';
     console.log('reading js');
 
+    const backgroundMusic = new Audio('sounds/background.mp3');
+
     const nextBtn = document.querySelector('#nextBtn');
     const nextBtnInstruction = document.querySelector('#nextInstruction');
     const prevBtn = document.querySelector('#previousBtn');
@@ -78,6 +80,14 @@
     const closing = document.querySelector('#closing');
 
     let counter = 0;
+
+    //background music
+    backgroundMusic.volume = 0.5;
+    window.addEventListener('load', startBackgroundMusic);
+    function startBackgroundMusic(){
+        backgroundMusic.loop = true;
+    }
+
 
     nextBtn.addEventListener('click', function(){
         btnSound.play();
