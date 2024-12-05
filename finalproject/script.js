@@ -42,21 +42,37 @@
     const sgt_btn_four = document.querySelector('#sgt_overlay4_btn');
     //image maps
     const heepee = document.querySelector('#heepee'); //overlay1
+    const heepeeID = document.querySelector('#heepeeID');
     const byungChan = document.querySelector('#byungChanFace'); //overlay2
+    const byungChanSquadID = document.querySelector('#byungChanSquadID');
     const manKyu = document.querySelector('#manKyuFace');
+    const manKyuSquadID = document.querySelector('#manKyuSquadID');
     const gunWuk = document.querySelector('#gunWuk'); //overlay3
+    const gunWukID = document.querySelector('#gunWukID');
     const junSang = document.querySelector('#junSang');
+    const junSangID = document.querySelector('#junSangID');
     const jinWoo = document.querySelector('#jinWoo');
+    const jinWooID = document.querySelector('#jinWooID');
     const haeMin = document.querySelector('#haeMin');
+    const haeMinID = document.querySelector('#haeMinID');
     const kyungMin2 = document.querySelector('#kyungMin2'); //overlay 4
+    const kyungMinPlatoonID = document.querySelector('#kyungMinPlatoonID');
     const minSeo = document.querySelector('#minSeo');
+    const minseoID = document.querySelector('#minseoID');
     const manKyu2 = document.querySelector('#manKyu2');
+    const manKyuPlatoonID = document.querySelector('#manKyuPlatoonID');
     const ikJun = document.querySelector('#ikJun');
+    const ikJunID = document.querySelector('#ikJunID');
     const byungChan2 = document.querySelector('#byungChan2');
+    const byungChanPlatoonID = document.querySelector('#byungChanPlatoonID');
     const minHyuk = document.querySelector('#minHyuk');
+    const minHyukID = document.querySelector('#minHyukID');
     const eunHyung = document.querySelector('#eunHyung');
+    const eunHyungID = document.querySelector('#eunHyungID');
     const gunWuk2 = document.querySelector('#gunWuk2');
+    const gunWukPlatoonID = document.querySelector('#gunWukPlatoonID');
     const namEun = document.querySelector('#namEun');
+    const namEunID = document.querySelector('#namEunID');
     
     const closing = document.querySelector('#closing');
 
@@ -368,11 +384,12 @@
             nextBtn.disabled = true;
             nextBtnInstruction.innerHTML = '<p>Disabled</p>';
         });
-        //test
-        heepee.addEventListener('click', function(){
-            console.log('heepee');
+        heepee.addEventListener('mouseover', function(){
+            heepeeID.className = 'sgt_id showing';
         });
-        //test
+        heepee.addEventListener('mouseout', function(){
+            heepeeID.className = 'sgt_id hidden';
+        });
         sgt_btn_one.addEventListener('click', function(){
             sgt_over_one.className = 'overlay hidden';
             
@@ -396,14 +413,19 @@
             nextBtn.disabled = true;
             nextBtnInstruction.innerHTML = '<p>Disabled</p>';
         });
-        //test
-        byungChan.addEventListener('click', function(){
-            console.log('byungchan');
+        byungChan.addEventListener('mouseover', function(){
+            byungChanSquadID.className = 'sgt_id showing';
         });
-        manKyu.addEventListener('click', function(){
-            console.log('mankyu');
+        byungChan.addEventListener('mouseout', function(){
+            byungChanSquadID.className = 'sgt_id hidden';
         });
-        //test
+
+        manKyu.addEventListener('mouseover', function(){
+            manKyuSquadID.className = 'sgt_id showing';
+        });
+        manKyu.addEventListener('mouseout', function(){
+            manKyuSquadID.className = 'sgt_id hidden';
+        });
         sgt_btn_two.addEventListener('click', function(){
             sgt_over_two.className = 'overlay hidden';
             
@@ -427,20 +449,30 @@
             nextBtn.disabled = true;
             nextBtnInstruction.innerHTML = '<p>Disabled</p>';
         });
-        //test
-        gunWuk.addEventListener('click', function(){
-            console.log('gunwuk');
+        gunWuk.addEventListener('mouseover', function(){
+            gunWukID.className = 'sgt_id showing';
         });
-        junSang.addEventListener('click', function(){
-            console.log('junsang');
+        gunWuk.addEventListener('mouseout', function(){
+            gunWukID.className = 'sgt_id hidden';
         });
-        jinWoo.addEventListener('click', function(){
-            console.log('jinwoo');
+        junSang.addEventListener('mouseover', function(){
+            junSangID.className = 'sgt_id showing';
         });
-        haeMin.addEventListener('click', function(){
-            console.log('haemin');
+        junSang.addEventListener('mouseout', function(){
+            junSangID.className = 'sgt_id hidden';
         });
-        //test
+        jinWoo.addEventListener('mouseover', function(){
+            jinWooID.className = ('sgt_id showing');
+        });
+        jinWoo.addEventListener('mouseout', function(){
+            jinWooID.className = ('sgt_id hidden');
+        });
+        haeMin.addEventListener('mouseover', function(){
+            haeMinID.className = 'sgt_id showing';
+        });
+        haeMin.addEventListener('mouseout', function(){
+            haeMinID.className = 'sgt_id hidden';
+        });
         sgt_btn_three.addEventListener('click', function(){
             sgt_over_three.className = 'overlay hidden';
             
@@ -465,34 +497,60 @@
             nextBtnInstruction.innerHTML = '<p>Disabled</p>';
         });
         //test
-        kyungMin2.addEventListener('click', function(){
-            console.log('kyungMin2');
+        kyungMin2.addEventListener('mouseover', function(){
+            kyungMinPlatoonID.className = 'sgt_id showing';
         });
-        minSeo.addEventListener('click', function(){
-            console.log('minseo');
+        kyungMin2.addEventListener('mouseout', function(){
+            kyungMinPlatoonID.className = 'sgt_id hidden';
         });
-        manKyu2.addEventListener('click', function(){
-            console.log('mankyu2');
+        minSeo.addEventListener('mouseover', function(){
+            minseoID.className = 'sgt_id showing';
         });
-        ikJun.addEventListener('click', function(){
-            console.log('ikjun');
+        minSeo.addEventListener('mouseout', function(){
+            minseoID.className = 'sgt_id hidden';
         });
-        byungChan2.addEventListener('click', function(){
-            console.log('byungchan2');
+        manKyu2.addEventListener('mouseover', function(){
+            manKyuPlatoonID.className = 'sgt_id showing';
         });
-        minHyuk.addEventListener('click', function(){
-            console.log('minHyuk');
+        manKyu2.addEventListener('mouseout', function(){
+            manKyuPlatoonID.className = 'sgt_id hidden';
         });
-        eunHyung.addEventListener('click', function(){
-            console.log('eunHyung');
+        ikJun.addEventListener('mouseover', function(){
+            ikJunID.className = 'sgt_id showing';
         });
-        gunWuk2.addEventListener('click', function(){
-            console.log('gunwuk2');
+        ikJun.addEventListener('mouseout', function(){
+            ikJunID.className = 'sgt_id hidden';
         });
-        namEun.addEventListener('click', function(){
-            console.log('namEun');
+        byungChan2.addEventListener('mouseover', function(){
+            byungChanPlatoonID.className = 'sgt_id showing';
         });
-        //test
+        byungChan2.addEventListener('mouseout', function(){
+            byungChanPlatoonID.className = 'sgt_id hidden';
+        });
+        minHyuk.addEventListener('mouseover', function(){
+            minHyukID.className = 'sgt_id showing';
+        });
+        minHyuk.addEventListener('mouseout', function(){
+            minHyukID.className = 'sgt_id hidden';
+        });
+        eunHyung.addEventListener('mouseover', function(){
+            eunHyungID.className = 'sgt_id showing';
+        });
+        eunHyung.addEventListener('mouseout', function(){
+            eunHyungID.className = 'sgt_id hidden';
+        });
+        gunWuk2.addEventListener('mouseover', function(){
+            gunWukPlatoonID.className = 'sgt_id showing';
+        });
+        gunWuk2.addEventListener('mouseout', function(){
+            gunWukPlatoonID.className = 'sgt_id hidden';
+        });
+        namEun.addEventListener('mouseover', function(){
+            namEunID.className = 'sgt_id showing';
+        });
+        namEun.addEventListener('mouseout', function(){
+            namEunID.className = 'sgt_id hidden';
+        });
         sgt_btn_four.addEventListener('click', function(){
             sgt_over_four.className = 'overlay hidden';
             
