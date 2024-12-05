@@ -6,6 +6,7 @@
     const nextBtnInstruction = document.querySelector('#nextInstruction');
     const prevBtn = document.querySelector('#previousBtn');
     const prevBtnInstruction = document.querySelector('#previousInstruction');
+    const btnSound = new Audio('sounds/arrowButtonSound2.mp3');
 
     const opening = document.querySelector('#opening');
 
@@ -79,7 +80,8 @@
     let counter = 0;
 
     nextBtn.addEventListener('click', function(){
-        
+        btnSound.play();
+
         counter++;
         if (counter > 5){
             counter = 5;
@@ -110,6 +112,8 @@
         prevBtnInstruction.className = 'navigationHover hidden';
     });
     prevBtn.addEventListener('click', function(){
+        btnSound.play();
+
         counter--;
         if (counter < 0){
             counter = 0;
