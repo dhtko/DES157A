@@ -8,7 +8,7 @@
     const nextBtnInstruction = document.querySelector('#nextInstruction');
     const prevBtn = document.querySelector('#previousBtn');
     const prevBtnInstruction = document.querySelector('#previousInstruction');
-    const btnSound = new Audio('sounds/arrowButtonSound2.mp3');
+    const btnSound = new Audio('sounds/buttonSound.mp3');
 
     const opening = document.querySelector('#opening');
 
@@ -85,8 +85,17 @@
     backgroundMusic.volume = 0.5;
     window.addEventListener('load', startBackgroundMusic);
     function startBackgroundMusic(){
+        backgroundMusic.play();
         backgroundMusic.loop = true;
     }
+    document.addEventListener('keydown', function(event){
+        if (event.key === 'm'){
+            backgroundMusic.muted = true;
+        }
+        if (event.key === 'n'){
+            backgroundMusic.muted = false;
+        }
+    });
 
 
     nextBtn.addEventListener('click', function(){
